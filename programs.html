@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs | RoboKidz STEM Education</title>
+    <meta name="description" content="Explore our premium robotics, coding, AI, and electronics programs for children aged 6 to 16. Practical STEM curricula designed for tomorrow's leaders.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232F80ED'/><circle cx='50' cy='50' r='20' fill='white'/></svg>">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css?v=1.2">
+</head>
+<body>
+
+    <!-- Floating Background Elements -->
+    <svg class="decoration-shape decoration-gear-blue" viewBox="0 0 100 100">
+        <path d="M50 35c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15zm0 25c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10zm8.3-33l2.9-6.9c.3-.8-.1-1.7-.9-2l-5.8-2.4c-.8-.3-1.7.1-2 .9l-2.9 6.9c-2.4-.4-4.8-.4-7.2 0l-2.9-6.9c-.3-.8-1.2-1.2-2-.9L24.6 9c-.8.3-1.2 1.2-.9 2l2.9 6.9c-1.8 1.6-3.3 3.6-4.4 5.9l-6.9-2.9c-.8-.3-1.7.1-2 .9l-2.4 5.8c-.3.8.1 1.7.9 2l6.9 2.9c-.4 2.4-.4 4.8 0 7.2l-6.9 2.9c-.8.3-1.2 1.2-.9 2l2.4 5.8c.3.8 1.2 1.2 2 .9l6.9-2.9c1.1 2.3 2.6 4.3 4.4 5.9l-2.9 6.9c-.3.8.1 1.7.9 2l5.8 2.4c.8.3 1.7-.1 2-.9l2.9-6.9c2.4.4 4.8.4 7.2 0l2.9 6.9c.3.8 1.2 1.2 2 .9l5.8-2.4c.8-.3 1.2-1.2.9-2l-2.9-6.9c1.8-1.6 3.3-3.6 4.4-5.9l6.9 2.9c.8.3 1.7-.1 2-.9l2.4-5.8c.3-.8-.1-1.7-.9-2l-6.9-2.9c.4-2.4.4-4.8 0-7.2l6.9-2.9c.8-.3 1.2-1.2.9-2l-2.4-5.8c-.3-.8-1.2-1.2-2-.9l-6.9 2.9c-1.1-2.3-2.6-4.3-4.4-5.9z"/>
+    </svg>
+    <div class="decoration-shape decoration-gear-yellow" style="top:70%; left:2%;"></div>
+
+    <!-- Sticky Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.avif" alt="RoboKidz Logo">
+            </a>
+            
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="programs.html" class="nav-link active">Programs</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-btn-mobile"><a href="contact.html" class="btn btn-red">Enroll Now &rarr;</a></li>
+            </ul>
+            
+            <a href="contact.html" class="btn btn-red header-btn">Enroll Now &rarr;</a>
+        </div>
+    </header>
+
+    <!-- Program Hero Section -->
+    <section class="program-hero">
+        <div class="container reveal-on-load">
+            <span class="section-tag blue">Ages 6 - 16</span>
+            <h1>Our STEM Pathways</h1>
+            <p>Tailored courses that build analytical mindset, engineering skills, and child self-reliance through structured physical learning blocks.</p>
+        </div>
+    </section>
+
+    <!-- Detailed Programs Cards Grid -->
+    <section class="programs-cards-section section-padding">
+        <div class="container">
+            <div class="programs-extended-grid scroll-reveal">
+                <!-- Card 1: Coding -->
+                <div class="program-extended-card">
+                    <div class="program-ext-img">
+                        <span class="program-badge">Logic & Coding</span>
+                        <img src="assets/student-project.png" alt="Kid assembly and coding layout setup">
+                    </div>
+                    <div class="program-ext-body">
+                        <h3>Creative Code Blocks</h3>
+                        <p>Perfect startup module. Young minds learn logic loops, boolean switches, variables, and sprite control via visual building blocks before stepping up to Python scripting.</p>
+                        
+                        <div class="program-meta">
+                            <div class="program-meta-item">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                                <span>Age Group: 6–9</span>
+                            </div>
+                            <div class="program-meta-item">
+                                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 2 22 6.48 22 12s-4.48-10-10.01-10zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                                <span>12 Weeks</span>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="btn btn-primary" style="width: 100%;">Enroll Path</a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Robotics Labs -->
+                <div class="program-extended-card">
+                    <div class="program-ext-img">
+                        <span class="program-badge">Robotics Kits</span>
+                        <img src="assets/competition-robot.png" alt="Robotics chassis tracking on trackway">
+                    </div>
+                    <div class="program-ext-body">
+                        <h3>Sensor Robotics Lab</h3>
+                        <p>Assemble custom physical chassis, wire DC motors to drive shields, and program ultrasonic distance sensors to steer robots autonomously through target mazes.</p>
+                        
+                        <div class="program-meta">
+                            <div class="program-meta-item">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                                <span>Age Group: 9–12</span>
+                            </div>
+                            <div class="program-meta-item">
+                                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 2 22 6.48 22 12s-4.48-10-10.01-10zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                                <span>16 Weeks</span>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="btn btn-red" style="width: 100%;">Enroll Path</a>
+                    </div>
+                </div>
+
+                <!-- Card 3: AI -->
+                <div class="program-extended-card">
+                    <div class="program-ext-img">
+                        <span class="program-badge">AI & Machine Learning</span>
+                        <img src="assets/hero-robot.png" alt="RoboKidz robot face rendering">
+                    </div>
+                    <div class="program-ext-body">
+                        <h3>Future AI & ML Explorers</h3>
+                        <p>Introduce smart algorithms! Kids feed custom images to training sets, create speech commands, and discover the algorithms running modern autonomous cars.</p>
+                        
+                        <div class="program-meta">
+                            <div class="program-meta-item">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                                <span>Age Group: 12–16</span>
+                            </div>
+                            <div class="program-meta-item">
+                                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 2 22 6.48 22 12s-4.48-10-10.01-10zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                                <span>16 Weeks</span>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="btn btn-yellow" style="width: 100%;">Enroll Path</a>
+                    </div>
+                </div>
+
+                <!-- Card 4: Electronics -->
+                <div class="program-extended-card">
+                    <div class="program-ext-img">
+                        <span class="program-badge">Circuits & Arduino</span>
+                        <img src="assets/student-project.png" alt="Breadboard layout assembly">
+                    </div>
+                    <div class="program-ext-body">
+                        <h3>Smart Electronics & Microcontrollers</h3>
+                        <p>Read electrical circuits, connect breadboards safely, integrate light sensors, and write C++ routines for Arduino to command RGB light modules.</p>
+                        
+                        <div class="program-meta">
+                            <div class="program-meta-item">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                                <span>Age Group: 11–15</span>
+                            </div>
+                            <div class="program-meta-item">
+                                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 2 22 6.48 22 12s-4.48-10-10.01-10zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                                <span>12 Weeks</span>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="btn btn-primary" style="width: 100%;">Enroll Path</a>
+                    </div>
+                </div>
+
+                <!-- Card 5: Holiday Workshop -->
+                <div class="program-extended-card">
+                    <div class="program-ext-img">
+                        <span class="program-badge">Short Term Camps</span>
+                        <img src="assets/workshop-kids.png" alt="Kids laughing in a class workshop">
+                    </div>
+                    <div class="program-ext-body">
+                        <h3>Maker Space Workshops</h3>
+                        <p>High-energy weekend bootcamps. Students collaborate in fast-paced 2-day challenges to prototype smart fans, solar tracking flags, or automated toys.</p>
+                        
+                        <div class="program-meta">
+                            <div class="program-meta-item">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                                <span>Age Group: 6–16</span>
+                            </div>
+                            <div class="program-meta-item">
+                                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 2 22 6.48 22 12s-4.48-10-10.01-10zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                                <span>2 Days</span>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="btn btn-red" style="width: 100%;">Book Workshop</a>
+                    </div>
+                </div>
+
+                <!-- Card 6: Projects -->
+                <div class="program-extended-card">
+                    <div class="program-ext-img">
+                        <span class="program-badge">Advanced Portfolio</span>
+                        <img src="assets/competition-robot.png" alt="Competitive robot testing rig">
+                    </div>
+                    <div class="program-ext-body">
+                        <h3>Project-Based Innovation</h3>
+                        <p>Advance beyond standard kits. Seniors draft custom circuits, program sensory microchips, and design real patent-ready models for innovation fairs.</p>
+                        
+                        <div class="program-meta">
+                            <div class="program-meta-item">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                                <span>Age Group: 13–16</span>
+                            </div>
+                            <div class="program-meta-item">
+                                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 2 22 6.48 22 12s-4.48-10-10.01-10zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                                <span>20 Weeks</span>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="btn btn-yellow" style="width: 100%;">Enroll Path</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cognitive Benefits Section -->
+    <section class="benefits-section section-padding" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag green">Cognitive Growth</span>
+                <h2>What Children Develop</h2>
+                <p>Beyond coding syntax, RoboKidz programs target and strengthen soft and hard cognitive skills.</p>
+            </div>
+
+            <div class="benefits-grid scroll-reveal">
+                <!-- Benefit 1 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 13.33L4.5 12.3l7.5-4.09 7.5 4.09-7.5 4.04z"/></svg>
+                    </div>
+                    <h3>Logical Framing</h3>
+                    <p>Understanding chronological algorithms, conditionals (If-Else loops), and code structures.</p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l2.79-2.79C10.09 18.66 11.02 19 12 19c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg>
+                    </div>
+                    <h3>Resilient Problem Solving</h3>
+                    <p>Learning how to isolate wiring problems, trace bugs in scripts, and build functional iterations.</p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/></svg>
+                    </div>
+                    <h3>Spatial Creativity</h3>
+                    <p>Designing structures, balancing torque, using mechanical gears, and working with custom dimensions.</p>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zM8 11c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3z"/></svg>
+                    </div>
+                    <h3>Team Collaboration</h3>
+                    <p>Working in pairs to brainstorm features, assign programming/building roles, and present results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section section-padding">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag red">Help Desk</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Answers to common questions about enrollment, safety, equipment, and coding pathways.</p>
+            </div>
+
+            <div class="faq-container scroll-reveal">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Does my child need prior coding experience?</h3>
+                        <div class="faq-icon-box">
+                            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Not at all! We start our younger group paths (ages 6–9) with visual blocks that require no typing skills. We guide them step-by-step into syntaxes as they gain confidence.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do we need to buy any hardware kits?</h3>
+                        <div class="faq-icon-box">
+                            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            All necessary electronics, chassis units, sensors, and computers are provided for student use inside our labs. If you wish to build at home, we sell take-home kit boxes at our lobby counter.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are the electronics safe for children?</h3>
+                        <div class="faq-icon-box">
+                            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Absolutely. We use low-voltage DC currents (5V–9V powered by AA batteries or USB power). There is no high-voltage AC exposure, and no soldering is done by children in junior modules.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the duration of each batch class?</h3>
+                        <div class="faq-icon-box">
+                            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Regular pathways meet once a week on weekends for 2 hours. Weekend workshops and special holiday intensive camps run daily over designated schedules.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section-padding">
+        <div class="container scroll-reveal">
+            <div class="cta-banner">
+                <div class="cta-decorations">
+                    <svg class="cta-decor-1" viewBox="0 0 100 100"><path d="M50 35c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15zm8.3-33l2.9-6.9c.3-.8-.1-1.7-.9-2l-5.8-2.4c-.8-.3-1.7.1-2 .9l-2.9 6.9c-2.4-.4-4.8-.4-7.2 0l-2.9-6.9c-.3-.8-1.2-1.2-2-.9L24.6 9c-.8.3-1.2 1.2-.9 2l2.9 6.9c-1.8 1.6-3.3 3.6-4.4 5.9l-6.9-2.9c-.8-.3-1.7.1-2 .9l-2.4 5.8c-.3.8.1 1.7.9 2l6.9 2.9c-.4 2.4-.4 4.8 0 7.2l-6.9 2.9c-.8.3-1.2 1.2-.9 2l2.4 5.8c.3.8 1.2 1.2 2 .9l6.9-2.9c1.1 2.3 2.6 4.3 4.4 5.9l-2.9 6.9c-.3.8.1 1.7.9 2l5.8 2.4c.8.3 1.7-.1 2-.9l2.9-6.9c2.4.4 4.8.4 7.2 0l2.9 6.9c.3.8 1.2 1.2 2 .9l5.8-2.4c.8-.3 1.2-1.2.9-2l-2.9-6.9c1.8-1.6 3.3-3.6 4.4-5.9l6.9 2.9c.8.3 1.7-.1 2-.9l2.4-5.8c.3-.8-.1-1.7-.9-2l-6.9-2.9c.4-2.4.4-4.8 0-7.2l6.9-2.9c.8-.3 1.2-1.2.9-2l-2.4-5.8c-.3-.8-1.2-1.2-2-.9l-6.9 2.9c-1.1-2.3-2.6-4.3-4.4-5.9z"/></svg>
+                    <svg class="cta-decor-2" viewBox="0 0 100 100"><path d="M50 35c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15zm8.3-33l2.9-6.9c.3-.8-.1-1.7-.9-2l-5.8-2.4c-.8-.3-1.7.1-2 .9l-2.9 6.9c-2.4-.4-4.8-.4-7.2 0l-2.9-6.9c-.3-.8-1.2-1.2-2-.9L24.6 9c-.8.3-1.2 1.2-.9 2l2.9 6.9c-1.8 1.6-3.3 3.6-4.4 5.9l-6.9-2.9c-.8-.3-1.7.1-2 .9l-2.4 5.8c-.3.8.1 1.7.9 2l6.9 2.9c-.4 2.4-.4 4.8 0 7.2l-6.9 2.9c-.8.3-1.2 1.2-.9 2l2.4 5.8c.3.8 1.2 1.2 2 .9l6.9-2.9c1.1 2.3 2.6 4.3 4.4 5.9l-2.9 6.9c-.3.8.1 1.7.9 2l5.8 2.4c.8.3 1.7-.1 2-.9l2.9-6.9c2.4.4 4.8.4 7.2 0l2.9 6.9c.3.8 1.2 1.2 2 .9l5.8-2.4c.8-.3 1.2-1.2.9-2l-2.9-6.9c1.8-1.6 3.3-3.6 4.4-5.9l6.9 2.9c.8.3 1.7-.1 2-.9l2.4-5.8c.3-.8-.1-1.7-.9-2l-6.9-2.9c.4-2.4.4-4.8 0-7.2l6.9-2.9c.8-.3 1.2-1.2.9-2l-2.4-5.8c-.3-.8-1.2-1.2-2-.9l-6.9 2.9c-1.1-2.3-2.6-4.3-4.4-5.9z"/></svg>
+                </div>
+                <div class="cta-banner-content">
+                    <h2>Ready to Build the Future?</h2>
+                    <p>Sign up your child for a free hands-on diagnostic session today. Spaces are limited for our upcoming intake term batches!</p>
+                    <a href="contact.html" class="btn btn-yellow">Enroll Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 100 100" style="fill: #FFFFFF;">
+                            <path d="M50 35c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15zm8.3-33l2.9-6.9c.3-.8-.1-1.7-.9-2l-5.8-2.4c-.8-.3-1.7.1-2 .9l-2.9 6.9c-2.4-.4-4.8-.4-7.2 0l-2.9-6.9c-.3-.8-1.2-1.2-2-.9L24.6 9c-.8.3-1.2 1.2-.9 2l2.9 6.9c-1.8 1.6-3.3 3.6-4.4 5.9l-6.9-2.9c-.8-.3-1.7.1-2 .9l-2.4 5.8c-.3.8.1 1.7.9 2l6.9 2.9c-.4 2.4-.4 4.8 0 7.2l-6.9 2.9c-.8.3-1.2 1.2-.9 2l2.4 5.8c.3.8 1.2 1.2 2 .9l6.9-2.9c1.1 2.3 2.6 4.3 4.4 5.9l-2.9 6.9c-.3.8.1 1.7.9 2l5.8 2.4c.8.3 1.7-.1 2-.9l2.9-6.9c2.4.4 4.8.4 7.2 0l2.9 6.9c.3.8 1.2 1.2 2 .9l5.8-2.4c.8-.3 1.2-1.2.9-2l-2.9-6.9c1.8-1.6 3.3-3.6 4.4-5.9l6.9 2.9c.8.3 1.7-.1 2-.9l2.4-5.8c.3-.8-.1-1.7-.9-2l-6.9-2.9c.4-2.4.4-4.8 0-7.2l6.9-2.9c.8-.3 1.2-1.2.9-2l-2.4-5.8c-.3-.8-1.2-1.2-2-.9l-6.9 2.9c-1.1-2.3-2.6-4.3-4.4-5.9z"/>
+                        </svg>
+                        RoboKidz<span class="logo-dot">.</span>
+                    </a>
+                    <p>Empowering children aged 6 to 16 with custom physical electronics kits, intuitive micro-controllers, game design tools, and cognitive coding methodologies.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="footer-column">
+                    <h4>Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="programs.html">Creative Coding</a></li>
+                        <li><a href="programs.html">Robotics Labs</a></li>
+                        <li><a href="programs.html">Future AI & ML</a></li>
+                        <li><a href="programs.html">Smart Electronics</a></li>
+                        <li><a href="programs.html">Holiday Bootcamps</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Book Free Demo</a></li>
+                        <li><a href="about.html">Our Mentors</a></li>
+                        <li><a href="gallery.html">Student Gallery</a></li>
+                        <li><a href="contact.html">Locate Lab Center</a></li>
+                        <li><a href="contact.html">Support Desk</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <p>Stay updated on robotics tournaments, project showcases, and student enrollment deals.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn btn-primary">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 RoboKidz Education. All Rights Reserved.</p>
+                <ul class="footer-bottom-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript Application -->
+    <script src="js/main.js"></script>
+</body>
+</html>
