@@ -3226,3 +3226,185 @@ textarea.form-control {
         gap: 15px;
     }
 }
+
+/* Coding & AI Section */
+.coding-ai-section {
+    background-color: var(--bg-primary);
+    position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+}
+
+/* Large rounded D-shape blue blob on the left */
+.coding-ai-blob-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 320px;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 1;
+}
+
+.coding-ai-grid {
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    gap: 80px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* Left side content */
+.coding-ai-content {
+    padding-right: 20px;
+}
+
+.coding-ai-content h2 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text-main);
+    margin-bottom: 24px;
+}
+
+.coding-ai-content p {
+    font-family: var(--font-body);
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+    margin-bottom: 36px;
+    font-weight: 500;
+    max-width: 580px;
+}
+
+/* Right side media */
+.coding-ai-media {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.coding-ai-bg-glow {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(47, 128, 237, 0.08) 0%, transparent 70%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.coding-ai-image {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.08));
+}
+
+/* Outline Blue Button */
+.btn-outline-blue {
+    background-color: #FFFFFF !important;
+    border: 2px solid var(--primary-blue) !important;
+    color: var(--primary-blue) !important;
+    padding: 16px 36px;
+    border-radius: 99px !important;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 8px 20px rgba(47, 128, 237, 0.08);
+    transition: var(--transition-bounce);
+    cursor: pointer;
+}
+
+.btn-outline-blue:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(47, 128, 237, 0.2);
+    background-color: var(--primary-blue-light) !important;
+}
+
+.btn-outline-blue .btn-arrow {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.btn-outline-blue:hover .btn-arrow {
+    transform: translateX(4px);
+}
+
+/* Scroll reveal overrides for Coding & AI */
+.coding-ai-media.scroll-reveal {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.coding-ai-media.scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.coding-ai-content.scroll-reveal {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.coding-ai-content.scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Responsive Overrides */
+@media (max-width: 992px) {
+    .coding-ai-section {
+        padding: 80px 0;
+    }
+    .coding-ai-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+    .coding-ai-content {
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coding-ai-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .coding-ai-image {
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 576px) {
+    .coding-ai-section {
+        padding: 60px 0;
+    }
+    .coding-ai-content h2 {
+        font-size: 2.2rem;
+    }
+    .coding-ai-content p {
+        font-size: 1.05rem;
+    }
+    .coding-ai-image {
+        max-width: 300px;
+    }
+}
+
