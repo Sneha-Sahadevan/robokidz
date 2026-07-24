@@ -252,6 +252,17 @@
         overflow: hidden;
     }
 
+    /* Scale left blue organic blobs on mobile */
+    .cta-section-v2::before {
+        display: none;
+    }
+    
+    .cta-bottom-left-curve {
+        width: 120px;
+        height: 144px;
+        opacity: 0.85;
+    }
+
     .cta-banner-v2 {
         grid-template-columns: 1fr;
         padding: 32px 24px;
