@@ -1,0 +1,1086 @@
+/*
+ * RoboKidz — Mobile Responsive Stylesheet
+ * Covers: 768px | 576px | 380px
+ * Rule: Desktop styles are UNTOUCHED. Only mobile overrides here.
+ */
+
+/* =====================================================
+   GLOBAL / SHARED — max-width: 768px
+   ===================================================== */
+@media (max-width: 768px) {
+
+    /* Base container tighter padding */
+    .container {
+        padding: 0 18px;
+    }
+
+    /* Hide floating decoration shapes on small screens to avoid overflow */
+    .decoration-shape {
+        display: none;
+    }
+
+    /* Hero corner blobs — scale down */
+    .hero-corner-blob-left,
+    .hero-corner-blob-right {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* ---- HEADER ---- */
+    .header {
+        top: 10px;
+        width: calc(100% - 24px);
+        padding: 12px 20px;
+        border-radius: 60px;
+    }
+
+    .header.scrolled {
+        top: 6px;
+        padding: 10px 20px;
+    }
+
+    /* 3-col header grid → logo | hamburger */
+    .header .container {
+        grid-template-columns: 1fr auto;
+        gap: 0;
+    }
+
+    .logo img {
+        height: 44px;
+    }
+
+    /* Mobile drawer overlay backdrop */
+    .nav-menu.open::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.35);
+        z-index: -1;
+    }
+
+    /* Nav menu drawer */
+    .nav-menu {
+        gap: 28px;
+        padding: 80px 32px 40px;
+    }
+
+    .nav-link {
+        font-size: 1.25rem;
+    }
+
+    /* ---- HERO SECTION ---- */
+    .hero-section {
+        padding: 110px 0 60px;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-content {
+        order: 1;
+    }
+
+    .hero-illustration {
+        order: 2;
+        height: 320px;
+    }
+
+    .hero-title-ref {
+        font-size: 2.6rem;
+        margin-bottom: 16px;
+    }
+
+    .hero-title-ref .subtitle-ref {
+        font-size: 1.6rem;
+        margin-top: 10px;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 28px;
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .btn-explore-ref {
+        padding: 12px 26px;
+        font-size: 1rem;
+    }
+
+    /* Scale down floating items around robot */
+    .float-bulb { width: 48px; height: 48px; }
+    .float-helper-robot { width: 52px; height: 52px; }
+    .float-gear-purple { width: 40px; height: 40px; }
+    .float-gear-blue-ref { width: 46px; height: 46px; }
+    .float-rocket { width: 56px; height: 56px; }
+    .float-microchip { width: 40px; height: 40px; }
+    .hero-dots-left { display: none; }
+
+    /* ---- CODING & AI SECTION ---- */
+    .coding-ai-section {
+        padding: 70px 0;
+    }
+
+    .coding-ai-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .coding-ai-content {
+        order: 1;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coding-ai-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .coding-ai-content p {
+        font-size: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .coding-ai-media {
+        order: 2;
+        min-height: 280px;
+    }
+
+    .coding-ai-image {
+        max-width: 300px;
+    }
+
+    /* ---- MISSION SECTION ---- */
+    .mission-section-v2 {
+        padding: 70px 0;
+    }
+
+    .mission-grid-v2 {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .mission-media-v2 {
+        min-height: auto;
+    }
+
+    .mission-image-v2 {
+        max-width: 280px;
+    }
+
+    .blob-blue {
+        width: 190px;
+        height: 190px;
+    }
+
+    .blob-orange {
+        width: 180px;
+        height: 180px;
+    }
+
+    .mission-content-v2 {
+        text-align: center;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission-content-v2 h2 {
+        font-size: 2.2rem;
+    }
+
+    .mission-content-v2 p {
+        font-size: 1rem;
+    }
+
+    .btn-yellow-round {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* ---- PROGRAMS SECTION ---- */
+    .programs-section-v2 {
+        padding: 70px 0;
+    }
+
+    .section-header-v2 {
+        margin-bottom: 48px;
+    }
+
+    .section-header-v2 h2 {
+        font-size: 2rem;
+    }
+
+    .programs-grid-v2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .card-image-wrapper {
+        height: 180px;
+        padding: 12px;
+    }
+
+    .card-body-v2 {
+        padding: 20px 16px;
+    }
+
+    .card-body-v2 h3 {
+        font-size: 1.15rem;
+    }
+
+    .btn-explore-all {
+        padding: 14px 28px;
+        font-size: 0.95rem;
+    }
+
+    /* ---- CTA SECTION V2 ---- */
+    .cta-section-v2 {
+        padding: 60px 0;
+        overflow: hidden;
+    }
+
+    .cta-banner-v2 {
+        grid-template-columns: 1fr;
+        padding: 32px 24px;
+        gap: 24px;
+    }
+
+    .cta-illustrations-v2 {
+        height: 180px;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .cta-robot-v2 {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        max-height: 180px;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .cta-text-v2 {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .cta-text-v2 h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-text-v2 p {
+        font-size: 0.95rem;
+    }
+
+    .cta-actions-v2 {
+        grid-column: span 1;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .btn-contact-v2 {
+        width: 100%;
+        padding: 14px 28px;
+        font-size: 1rem;
+    }
+
+    /* ---- FOOTER ---- */
+    .footer {
+        padding: 28px 0 16px;
+    }
+
+    .footer .container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    /*
+     * Mobile footer grid — compact 2-col desktop-like layout:
+     * Row 1: Logo & Social  (full width — col 1+2)
+     * Row 2: Quick Links | Programs
+     * Row 3: Contact Us  | Newsletter
+     */
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 0;
+        margin-bottom: 18px;
+    }
+
+    /* Col 1: Logo & Social — spans both columns */
+    .footer-col:nth-child(1) {
+        grid-column: 1 / -1;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0 16px 0;
+        border-bottom: 1px solid #E5E7EB;
+        border-right: none;
+    }
+
+    /* Col 2: Quick Links — left column */
+    .footer-col:nth-child(2) {
+        grid-column: 1;
+        padding: 16px 12px 16px 0;
+        border-right: 1px solid #E5E7EB;
+        border-bottom: 1px solid #E5E7EB;
+    }
+
+    /* Col 3: Programs — right column */
+    .footer-col:nth-child(3) {
+        grid-column: 2;
+        padding: 16px 0 16px 14px;
+        border-bottom: 1px solid #E5E7EB;
+        border-right: none;
+    }
+
+    /* Col 4: Contact Us — left column */
+    .footer-col:nth-child(4) {
+        grid-column: 1;
+        padding: 16px 12px 0 0;
+        border-right: 1px solid #E5E7EB;
+    }
+
+    /* Col 5: Newsletter — right column */
+    .footer-col:nth-child(5) {
+        grid-column: 2;
+        padding: 16px 0 0 14px;
+        border-right: none;
+    }
+
+    /* All cols: left-aligned, tight text */
+    .footer-col {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    /* Tighten heading spacing */
+    .footer-col h4 {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    /* Compact logo */
+    .footer-logo img {
+        height: 32px;
+    }
+
+    .footer-logo {
+        margin-bottom: 0;
+    }
+
+    /* Compact desc text */
+    .footer-desc {
+        display: none;
+    }
+
+    /* Smaller link text */
+    .footer-links-list a {
+        font-size: 13px;
+    }
+
+    .footer-links-list li {
+        margin-bottom: 5px;
+    }
+
+    /* Contact info compact */
+    .contact-info-list li {
+        font-size: 12.5px;
+        gap: 8px;
+        margin-bottom: 7px;
+        justify-content: flex-start;
+    }
+
+    .contact-icon svg {
+        width: 13px;
+        height: 13px;
+    }
+
+    /* Newsletter compact */
+    .newsletter-desc {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    /* Social icons stay left */
+    .social-links-circular {
+        justify-content: flex-start;
+        gap: 8px;
+    }
+
+    /* Compact footer bottom */
+    .footer-bottom {
+        padding-top: 14px;
+        margin-top: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+
+    .footer-bottom-links {
+        gap: 14px;
+    }
+
+    .footer-bottom-links a {
+        font-size: 12px;
+    }
+
+    /* ---- ABOUT PAGE ---- */
+    .about-hero {
+        padding: 120px 0 60px;
+    }
+
+    .about-hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .about-hero p {
+        font-size: 1rem;
+    }
+
+    .about-story {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .about-story-content h2 {
+        font-size: 1.8rem;
+    }
+
+    /* ---- PROGRAMS PAGE ---- */
+    .program-hero {
+        padding: 120px 0 60px;
+    }
+
+    .program-hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .program-hero p {
+        font-size: 1rem;
+    }
+
+    .programs-extended-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .program-ext-body {
+        padding: 24px 20px;
+    }
+
+    /* ---- GALLERY PAGE ---- */
+    .gallery-hero {
+        padding: 120px 0 60px;
+    }
+
+    .gallery-hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .gallery-hero p {
+        font-size: 1rem;
+    }
+
+    .gallery-grid {
+        column-count: 2;
+        column-gap: 16px;
+    }
+
+    .gallery-item {
+        margin-bottom: 16px;
+    }
+
+    /* ---- CONTACT PAGE ---- */
+    .contact-hero {
+        padding: 120px 0 60px;
+    }
+
+    .contact-hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .contact-hero p {
+        font-size: 1rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact-form-container {
+        padding: 32px 20px;
+    }
+
+    .contact-form-container h2 {
+        font-size: 1.7rem;
+    }
+}
+
+/* =====================================================
+   SMALL MOBILE — max-width: 576px
+   ===================================================== */
+@media (max-width: 576px) {
+
+    .container {
+        padding: 0 14px;
+    }
+
+    /* ---- HEADER ---- */
+    .header {
+        width: calc(100% - 16px);
+        top: 8px;
+        padding: 10px 16px;
+        border-radius: 50px;
+    }
+
+    .logo img {
+        height: 38px;
+    }
+
+    /* ---- HERO ---- */
+    .hero-section {
+        padding: 100px 0 50px;
+    }
+
+    .hero-illustration {
+        height: 270px;
+    }
+
+    .hero-title-ref {
+        font-size: 2rem;
+    }
+
+    .hero-title-ref .subtitle-ref {
+        font-size: 1.35rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .floating-robot {
+        max-width: 300px;
+    }
+
+    /* Hide extra floating items on very small screens */
+    .float-rocket,
+    .float-microchip,
+    .floating-zigzag,
+    .floating-plus {
+        display: none;
+    }
+
+    /* ---- CODING & AI ---- */
+    .coding-ai-section {
+        padding: 55px 0;
+    }
+
+    .coding-ai-content h2 {
+        font-size: 1.9rem;
+    }
+
+    .coding-ai-media {
+        min-height: 240px;
+    }
+
+    .coding-ai-image {
+        max-width: 260px;
+    }
+
+    /* ---- MISSION ---- */
+    .mission-section-v2 {
+        padding: 55px 0;
+    }
+
+    .mission-grid-v2 {
+        gap: 32px;
+    }
+
+    .mission-image-v2 {
+        max-width: 240px;
+    }
+
+    .blob-blue {
+        width: 160px;
+        height: 160px;
+    }
+
+    .blob-orange {
+        width: 150px;
+        height: 150px;
+    }
+
+    .mission-content-v2 h2 {
+        font-size: 1.9rem;
+    }
+
+    .mission-content-v2 p {
+        font-size: 0.95rem;
+    }
+
+    /* ---- PROGRAMS SECTION ---- */
+    .programs-section-v2 {
+        padding: 55px 0;
+    }
+
+    .section-header-v2 h2 {
+        font-size: 1.75rem;
+    }
+
+    /* Single column on small phones */
+    .programs-grid-v2 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card-image-wrapper {
+        height: 200px;
+    }
+
+    .btn-explore-all {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* ---- CTA V2 ---- */
+    .cta-banner-v2 {
+        padding: 28px 18px;
+    }
+
+    .cta-illustrations-v2 {
+        height: 150px;
+    }
+
+    .cta-robot-v2 {
+        max-height: 150px;
+    }
+
+    .cta-text-v2 h2 {
+        font-size: 1.55rem;
+    }
+
+    .parent-pile-v2 {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    /* ---- FOOTER (576px) — keep compact 2-col, tighten further ---- */
+    .footer {
+        padding: 22px 0 14px;
+    }
+
+    .footer .container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    /* Maintain 2-col grid, just reduce spacing */
+    .footer-col:nth-child(1) {
+        padding-bottom: 12px;
+    }
+
+    .footer-col:nth-child(2),
+    .footer-col:nth-child(3) {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .footer-col:nth-child(4),
+    .footer-col:nth-child(5) {
+        padding-top: 12px;
+    }
+
+    .footer-col h4 {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .footer-links-list a {
+        font-size: 12px;
+    }
+
+    .footer-links-list li {
+        margin-bottom: 4px;
+    }
+
+    .contact-info-list li {
+        font-size: 12px;
+        gap: 6px;
+        margin-bottom: 5px;
+    }
+
+    .newsletter-desc {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+
+    .newsletter-input-wrapper {
+        height: 40px;
+    }
+
+    .newsletter-input-wrapper input {
+        font-size: 13px;
+        padding: 0 8px 0 12px;
+    }
+
+    .newsletter-submit-btn {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Footer bottom — keep horizontal on 576px */
+    .footer-bottom {
+        padding-top: 12px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-bottom p {
+        font-size: 11.5px;
+    }
+
+    .footer-bottom-links {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .footer-bottom-links a {
+        font-size: 11.5px;
+    }
+
+    /* ---- SECTION PADDING REDUCTION ---- */
+    .section-padding {
+        padding: 50px 0;
+    }
+
+    /* ---- ABOUT PAGE ---- */
+    .about-hero {
+        padding: 100px 0 50px;
+    }
+
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+
+    .about-story-content h2 {
+        font-size: 1.65rem;
+    }
+
+    .about-story-content p {
+        font-size: 0.95rem;
+    }
+
+    /* ---- PROGRAMS PAGE ---- */
+    .program-hero {
+        padding: 100px 0 50px;
+    }
+
+    .program-hero h1 {
+        font-size: 2rem;
+    }
+
+    .programs-extended-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .program-ext-body {
+        padding: 20px 16px;
+    }
+
+    .program-meta {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* ---- GALLERY PAGE ---- */
+    .gallery-hero {
+        padding: 100px 0 50px;
+    }
+
+    .gallery-hero h1 {
+        font-size: 2rem;
+    }
+
+    .gallery-grid {
+        column-count: 1;
+    }
+
+    .gallery-filter {
+        gap: 8px;
+    }
+
+    .filter-btn {
+        padding: 7px 14px;
+        font-size: 0.85rem;
+    }
+
+    /* ---- CONTACT PAGE ---- */
+    .contact-hero {
+        padding: 100px 0 50px;
+    }
+
+    .contact-hero h1 {
+        font-size: 2rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .contact-form-container {
+        padding: 24px 16px;
+    }
+
+    .contact-card {
+        padding: 20px 16px;
+    }
+
+    /* ---- TIMELINE (About page) ---- */
+    .timeline::after {
+        left: 26px;
+    }
+
+    .timeline-container {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 16px;
+    }
+
+    .timeline-container.right {
+        left: 0;
+    }
+
+    .timeline-container.left::after,
+    .timeline-container.right::after {
+        left: 14px;
+        right: auto;
+    }
+
+    /* ---- WHY CHOOSE (About page) ---- */
+    .why-card {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    /* ---- SECTION HEADERS ---- */
+    .section-header h2 {
+        font-size: 1.75rem;
+    }
+
+    .section-header p {
+        font-size: 1rem;
+    }
+
+    /* ---- FAQ (Programs page) ---- */
+    .faq-question h3 {
+        font-size: 1rem;
+    }
+
+    .faq-question {
+        padding: 18px 16px;
+    }
+
+    .faq-answer-content {
+        padding: 0 16px 18px;
+        font-size: 0.95rem;
+    }
+
+    /* ---- MAP (Contact page) ---- */
+    .map-container {
+        height: 260px;
+    }
+
+    .map-card-popup {
+        font-size: 0.78rem;
+        padding: 8px 12px;
+    }
+}
+
+/* =====================================================
+   VERY SMALL — max-width: 380px
+   ===================================================== */
+@media (max-width: 380px) {
+
+    .header {
+        padding: 8px 14px;
+    }
+
+    .logo img {
+        height: 34px;
+    }
+
+    .hero-title-ref {
+        font-size: 1.75rem;
+    }
+
+    .hero-title-ref .subtitle-ref {
+        font-size: 1.2rem;
+    }
+
+    .hero-illustration {
+        height: 230px;
+    }
+
+    .floating-robot {
+        max-width: 240px;
+    }
+
+    .coding-ai-content h2 {
+        font-size: 1.7rem;
+    }
+
+    .coding-ai-image {
+        max-width: 220px;
+    }
+
+    .mission-content-v2 h2 {
+        font-size: 1.7rem;
+    }
+
+    .cta-text-v2 h2 {
+        font-size: 1.4rem;
+    }
+
+    .section-header-v2 h2 {
+        font-size: 1.6rem;
+    }
+
+    .programs-grid-v2 {
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero h1,
+    .program-hero h1,
+    .gallery-hero h1,
+    .contact-hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .card-image-wrapper {
+        height: 170px;
+    }
+}
+
+/* =====================================================
+   TOUCH / INTERACTION IMPROVEMENTS
+   ===================================================== */
+@media (max-width: 768px) {
+
+    /* Minimum touch target size 44×44px */
+    .btn,
+    .btn-red,
+    .btn-explore-ref,
+    .btn-outline-blue,
+    .btn-yellow-round,
+    .btn-explore-all,
+    .btn-contact-v2,
+    .filter-btn,
+    .nav-link {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    .mobile-toggle {
+        padding: 8px;
+        min-height: 44px;
+        min-width: 44px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Prevent hover transforms causing layout shift on touch */
+    .program-card-v2:hover,
+    .why-card:hover,
+    .team-card:hover,
+    .benefit-card:hover,
+    .value-card:hover,
+    .program-extended-card:hover,
+    .gallery-item:hover {
+        transform: none;
+    }
+
+    /* Keep gallery overlay always visible on touch */
+    .gallery-overlay {
+        opacity: 0;
+    }
+
+    /* Prevent text-size-adjust for consistent rendering */
+    html {
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+    }
+
+    /* Prevent horizontal overflow globally */
+    body,
+    .hero-section,
+    .coding-ai-section,
+    .mission-section-v2,
+    .programs-section-v2,
+    .cta-section-v2,
+    .footer {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+
+    /* Remove decorative items that overflow horizontally */
+    .decor.blob-top-right,
+    .decor.dotted-top-left,
+    .decor.dotted-bottom-right,
+    .decor.plus-bottom-left {
+        display: none;
+    }
+
+    .coding-ai-bg-glow {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* Hero BG rings scale */
+    .hero-bg-rings {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Hero illustration BG circle */
+    .hero-illustration-bg-ref {
+        width: 340px;
+        height: 340px;
+    }
+}

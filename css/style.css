@@ -1219,13 +1219,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-image-wrapper {
-    height: 190px;
+    height: 260px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F8FAFC;
+    background-color: transparent;
     position: relative;
-    padding: 24px;
+    padding: 16px;
 }
 
 .card-image-wrapper img {
@@ -1463,8 +1463,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Animations Keyframes */
 @keyframes cardImgFloat {
-    0% { transform: translateY(0) rotate(0deg); }
-    100% { transform: translateY(-8px) rotate(2deg); }
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-8px); }
 }
 
 @keyframes dotFloat {
