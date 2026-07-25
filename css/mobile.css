@@ -1095,3 +1095,145 @@
         height: 340px;
     }
 }
+
+/* About Page Mobile Responsive Overrides */
+@media (max-width: 991px) {
+    .mission-grid,
+    .vision-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .vision-grid {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .mission-content-wrapper,
+    .vision-content-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .badge-icon,
+    .squiggle-underline {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .mission-text,
+    .vision-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .mission-media-wrapper,
+    .vision-media-wrapper {
+        min-height: 360px;
+    }
+
+    .blob-blue {
+        width: 250px;
+        height: 300px;
+        left: 50%;
+        transform: translateX(-65%);
+    }
+    
+    .blob-orange {
+        width: 210px;
+        height: 300px;
+        right: 50%;
+        transform: translateX(65%);
+    }
+
+    .curved-dotted-path {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 2.1rem;
+    }
+    
+    .mission-text,
+    .vision-text {
+        font-size: 1rem;
+    }
+
+    .btn-yellow-pill,
+    .btn-blue-pill {
+        padding: 12px 28px;
+        font-size: 0.95rem;
+    }
+    
+    .blob-blue {
+        width: 200px;
+        height: 240px;
+    }
+    
+    .blob-orange {
+        width: 170px;
+        height: 240px;
+    }
+}
+
+/* Our Story & Meet Our Team Responsive Rules */
+@media (max-width: 991px) {
+    .story-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .story-intro-text {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .timeline-line-track {
+        display: none;
+    }
+
+    .timeline-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .team-bio {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-main-title {
+        font-size: 2rem;
+    }
+
+    .timeline-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+
+
