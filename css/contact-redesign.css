@@ -1,0 +1,493 @@
+/* Contact Page Redesign - Matching Reference Image 1 & 2 Pixel-Perfect */
+
+:root {
+    --cnt-red: #ff3b30;
+    --cnt-red-hover: #e03126;
+    --cnt-blue: #2563eb;
+    --cnt-blue-border: #4f7dff;
+    --cnt-green: #10b981;
+    --cnt-purple: #a855f7;
+    --cnt-yellow: #ffcc00;
+    --cnt-text-dark: #1e293b;
+    --cnt-text-gray: #64748b;
+    --cnt-bg-light: #f4f8ff;
+    --cnt-border-radius-pill: 9999px;
+    --cnt-border-radius-box: 20px;
+    --cnt-border-radius-card: 24px;
+}
+
+/* Page Body Base */
+.cnt-body {
+    font-family: 'Quicksand', 'Fredoka', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--cnt-text-dark);
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.cnt-container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+}
+
+/* ORGANIC CORNER BLOBS (Pixel-Perfect Reference Match) */
+.cnt-blob {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.95;
+}
+
+.cnt-blob-tl {
+    top: -50px;
+    left: -120px;
+    width: 360px;
+    height: 360px;
+    background-color: var(--cnt-blue);
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+}
+
+.cnt-blob-tr {
+    top: 140px;
+    right: -130px;
+    width: 380px;
+    height: 380px;
+    background-color: var(--cnt-red);
+    border-radius: 60% 40% 30% 70% / 50% 60% 40% 60%;
+}
+
+.cnt-blob-bl {
+    bottom: 40px;
+    left: -140px;
+    width: 380px;
+    height: 380px;
+    background-color: var(--cnt-red);
+    border-radius: 70% 30% 50% 50% / 60% 40% 60% 40%;
+}
+
+.cnt-blob-br {
+    bottom: 20px;
+    right: -110px;
+    width: 360px;
+    height: 360px;
+    background-color: var(--cnt-yellow);
+    border-radius: 50% 50% 40% 60% / 40% 60% 50% 50%;
+}
+
+/* FLOATING DECORATIVE ORNAMENTS */
+.cnt-decor {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.cnt-gear-purple-1 {
+    top: 170px;
+    left: 200px;
+    color: var(--cnt-purple);
+}
+
+.cnt-gear-purple-2 {
+    top: 270px;
+    right: 180px;
+    color: var(--cnt-purple);
+}
+
+.cnt-gear-blue-1 {
+    top: 220px;
+    left: 450px;
+    color: var(--cnt-blue);
+}
+
+.cnt-star-yellow-1 {
+    top: 160px;
+    left: 330px;
+    color: #eab308;
+}
+
+.cnt-star-yellow-2 {
+    top: 280px;
+    right: 370px;
+    color: #eab308;
+}
+
+.cnt-plus-purple-1 {
+    top: 170px;
+    right: 270px;
+    color: var(--cnt-purple);
+}
+
+.cnt-plus-purple-2 {
+    bottom: 120px;
+    right: 270px;
+    color: var(--cnt-purple);
+}
+
+.cnt-plus-blue-1 {
+    bottom: 150px;
+    left: 210px;
+    color: var(--cnt-blue);
+}
+
+.cnt-ring-cyan {
+    top: 210px;
+    left: 110px;
+    color: #06b6d4;
+}
+
+.cnt-zigzag-green-1 {
+    top: 400px;
+    left: 30px;
+    color: var(--cnt-green);
+}
+
+.cnt-zigzag-green-2 {
+    bottom: 220px;
+    right: 40px;
+    color: var(--cnt-green);
+}
+
+.cnt-dot-matrix {
+    bottom: 80px;
+    left: 45%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(6, 6px);
+    gap: 8px;
+    opacity: 0.3;
+}
+
+.cnt-dot-matrix span {
+    width: 6px;
+    height: 6px;
+    background-color: #94a3b8;
+    border-radius: 50%;
+}
+
+/* PAGE HERO HEADING */
+.cnt-hero-section {
+    padding: 110px 0 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.cnt-hero-title {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.9rem;
+    font-weight: 800;
+    color: var(--cnt-text-dark);
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+/* CONTACT SECTION (2 COLUMNS) */
+.cnt-section {
+    padding: 20px 0 60px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.cnt-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+/* LEFT COLUMN - FORM */
+.cnt-left-wrapper {
+    position: relative;
+}
+
+.cnt-left-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.cnt-section-title {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: var(--cnt-text-dark);
+    margin: 0;
+}
+
+/* 3D Robot Mascot above form */
+.cnt-robot-gear-img {
+    width: 140px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    top: -45px;
+    z-index: 3;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.08));
+}
+
+.cnt-form-row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.cnt-form-group {
+    margin-bottom: 16px;
+}
+
+.cnt-input-pill {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 24px;
+    border-radius: var(--cnt-border-radius-pill);
+    border: 2px solid var(--cnt-blue-border);
+    background-color: #ffffff;
+    font-size: 1.05rem;
+    color: var(--cnt-text-dark);
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(79, 125, 255, 0.08);
+    transition: all 0.25s ease;
+}
+
+.cnt-input-pill::placeholder {
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+.cnt-input-pill:focus {
+    border-color: var(--cnt-blue);
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.2);
+}
+
+.cnt-textarea-box {
+    width: 100%;
+    box-sizing: border-box;
+    height: 140px;
+    padding: 16px 24px;
+    border-radius: var(--cnt-border-radius-box);
+    border: 2px solid var(--cnt-blue-border);
+    background-color: #ffffff;
+    font-size: 1.05rem;
+    color: var(--cnt-text-dark);
+    outline: none;
+    resize: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(79, 125, 255, 0.08);
+    transition: all 0.25s ease;
+}
+
+.cnt-textarea-box::placeholder {
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+.cnt-textarea-box:focus {
+    border-color: var(--cnt-blue);
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.2);
+}
+
+.cnt-btn-send {
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+    background-color: var(--cnt-red);
+    color: #ffffff;
+    border: none;
+    border-radius: var(--cnt-border-radius-pill);
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(255, 59, 48, 0.35);
+    transition: all 0.3s ease;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.cnt-btn-send:hover {
+    background-color: var(--cnt-red-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 59, 48, 0.45);
+}
+
+/* RIGHT COLUMN - CONTACT DETAILS & ILLUSTRATIONS */
+.cnt-right-wrapper {
+    padding-top: 40px;
+    position: relative;
+}
+
+.cnt-info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-bottom: 30px;
+}
+
+.cnt-info-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.cnt-icon-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    flex-shrink: 0;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.cnt-icon-circle.red { background-color: var(--cnt-red); }
+.cnt-icon-circle.green { background-color: var(--cnt-green); }
+.cnt-icon-circle.blue { background-color: var(--cnt-blue); }
+
+.cnt-icon-circle svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+.cnt-info-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.cnt-info-title {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--cnt-text-dark);
+}
+
+.cnt-info-value {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #334155;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.cnt-info-value:hover {
+    color: var(--cnt-blue);
+}
+
+/* Small Robot holding location pin */
+.cnt-robot-pin-img {
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    width: 145px;
+    height: auto;
+    z-index: 3;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.08));
+}
+
+/* Folded Map Illustration */
+.cnt-map-vector {
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.08));
+}
+
+/* LOCATION & REAL GOOGLE MAP SECTION (Reference Image 2) */
+.cnt-loc-section {
+    margin: 40px 0 90px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.cnt-loc-card {
+    background-color: var(--cnt-bg-light);
+    border-radius: var(--cnt-border-radius-card);
+    border: 1.5px solid #e2e8f0;
+    padding: 28px;
+    box-shadow: 0 12px 35px rgba(37, 99, 235, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Map Header floating label (Reference Image 2) */
+.cnt-loc-header {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 4px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 14px 24px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    border-left: 4px solid var(--cnt-blue);
+    margin-bottom: 20px;
+}
+
+.cnt-loc-name {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--cnt-blue);
+}
+
+.cnt-loc-address {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--cnt-text-dark);
+}
+
+/* Embedded Google Map Frame */
+.cnt-map-iframe {
+    width: 100%;
+    height: 380px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    display: block;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 1024px) {
+    .cnt-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .cnt-robot-pin-img {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-bottom: 20px;
+    }
+    .cnt-blob-tl, .cnt-blob-tr, .cnt-blob-bl, .cnt-blob-br {
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 640px) {
+    .cnt-form-row-2 {
+        grid-template-columns: 1fr;
+    }
+    .cnt-hero-title {
+        font-size: 2.2rem;
+    }
+    .cnt-section-title {
+        font-size: 2rem;
+    }
+    .cnt-robot-gear-img {
+        width: 100px;
+        top: -30px;
+    }
+}

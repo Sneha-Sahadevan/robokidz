@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     handleScroll(); // Initial check
 
     // 3. Mobile Navigation Menu Toggle
-    const mobileToggle = document.querySelector('.mobile-toggle');
-    const navMenu = document.querySelector('.nav-menu');
+    const mobileToggle = document.querySelector('.mobile-toggle') || document.querySelector('.ref-mobile-toggle');
+    const navMenu = document.querySelector('.nav-menu') || document.querySelector('.ref-nav-menu');
     
     if (mobileToggle && navMenu) {
         mobileToggle.addEventListener('click', () => {
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Close menu when clicking a nav link
-        const navLinks = document.querySelectorAll('.nav-link');
+        const navLinks = document.querySelectorAll('.nav-link, .ref-nav-link');
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 mobileToggle.classList.remove('open');

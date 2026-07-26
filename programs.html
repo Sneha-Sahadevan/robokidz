@@ -3,353 +3,322 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programs | RoboKidz STEM Education</title>
-    <meta name="description" content="Explore our premium robotics, coding, AI, and electronics programs for children aged 6 to 16. Practical STEM curricula designed for tomorrow's leaders.">
+    <title>Our Programs | RoboKidz STEM Education</title>
+    <meta name="description" content="Hands-on learning, real-world projects, and expert mentorship to help kids build skills, spark creativity, and stay ahead in the future.">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232F80ED'/><circle cx='50' cy='50' r='20' fill='white'/></svg>">
-    <!-- Main Stylesheet -->
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Main & Redesign Stylesheets -->
     <link rel="stylesheet" href="css/style.css?v=1.4">
-    <link rel="stylesheet" href="css/mobile.css?v=1.0">
+    <link rel="stylesheet" href="css/programs-redesign.css?v=1.1">
 </head>
-<body>
+<body class="ref-programs-body">
 
-    <!-- Floating Background Elements -->
-    <svg class="decoration-shape decoration-gear-blue" viewBox="0 0 100 100">
-        <path d="M50 35c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15zm0 25c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10zm8.3-33l2.9-6.9c.3-.8-.1-1.7-.9-2l-5.8-2.4c-.8-.3-1.7.1-2 .9l-2.9 6.9c-2.4-.4-4.8-.4-7.2 0l-2.9-6.9c-.3-.8-1.2-1.2-2-.9L24.6 9c-.8.3-1.2 1.2-.9 2l2.9 6.9c-1.8 1.6-3.3 3.6-4.4 5.9l-6.9-2.9c-.8-.3-1.7.1-2 .9l-2.4 5.8c-.3.8.1 1.7.9 2l6.9 2.9c-.4 2.4-.4 4.8 0 7.2l-6.9 2.9c-.8.3-1.2 1.2-.9 2l2.4 5.8c.3.8 1.2 1.2 2 .9l6.9-2.9c1.1 2.3 2.6 4.3 4.4 5.9l-2.9 6.9c-.3.8.1 1.7.9 2l5.8 2.4c.8.3 1.7-.1 2-.9l2.9-6.9c2.4.4 4.8.4 7.2 0l2.9 6.9c.3.8 1.2 1.2 2 .9l5.8-2.4c.8-.3 1.2-1.2.9-2l-2.9-6.9c1.8-1.6 3.3-3.6 4.4-5.9l6.9 2.9c.8.3 1.7-.1 2-.9l2.4-5.8c.3-.8-.1-1.7-.9-2l-6.9-2.9c.4-2.4.4-4.8 0-7.2l6.9-2.9c.8-.3 1.2-1.2.9-2l-2.4-5.8c-.3-.8-1.2-1.2-2-.9l-6.9 2.9c-1.1-2.3-2.6-4.3-4.4-5.9z"/>
-    </svg>
-    <div class="decoration-shape decoration-gear-yellow" style="top:70%; left:2%;"></div>
-
-    <!-- Sticky Header -->
-    <header class="header">
-        <div class="container">
-            <a href="index.html" class="logo">
+    <!-- Sticky / Floating Navigation Bar -->
+    <header class="ref-header">
+        <div class="ref-nav-capsule">
+            <a href="index.html" class="ref-logo">
                 <img src="assets/logo.avif" alt="RoboKidz Logo">
             </a>
             
-            <button class="mobile-toggle" aria-label="Toggle Navigation">
+            <button class="ref-mobile-toggle" aria-label="Toggle Navigation">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="programs.html" class="nav-link active">Programs</a></li>
-                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-                <li class="nav-btn-mobile"><a href="contact.html" class="btn btn-red">Enroll Now &rarr;</a></li>
+            <ul class="ref-nav-menu">
+                <li><a href="index.html" class="ref-nav-link">Home</a></li>
+                <li><a href="about.html" class="ref-nav-link">About</a></li>
+                <li><a href="programs.html" class="ref-nav-link active">Programs</a></li>
+                <li><a href="gallery.html" class="ref-nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="ref-nav-link">Contact</a></li>
             </ul>
             
-            <a href="contact.html" class="btn btn-red header-btn">Enroll Now &rarr;</a>
+            <a href="contact.html" class="ref-btn-enroll">Enroll Now <span>&rarr;</span></a>
         </div>
     </header>
 
-    <!-- Program Hero Section -->
-    <section class="program-hero">
-        <div class="container reveal-on-load">
-            <span class="section-tag blue">Ages 6 - 16</span>
-            <h1>Our STEM Pathways</h1>
-            <p>Tailored courses that build analytical mindset, engineering skills, and child self-reliance through structured physical learning blocks.</p>
+    <!-- Hero Section -->
+    <section class="ref-hero-section">
+        <!-- Background Light Glow -->
+        <div class="ref-hero-bg-glow"></div>
+
+        <!-- Dots Grid Top Right -->
+        <div class="ref-dots-grid">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
         </div>
-    </section>
 
-    <!-- Detailed Programs Cards Grid -->
-    <section class="programs-cards-section section-padding">
-        <div class="container">
-            <div class="programs-extended-grid scroll-reveal">
-                <!-- Card 1: Coding -->
-                <div class="program-extended-card">
-                    <div class="program-ext-img">
-                        <span class="program-badge">Logic & Coding</span>
-                        <img src="assets/student-project.png" alt="Kid assembly and coding layout setup">
-                    </div>
-                    <div class="program-ext-body">
-                        <h3>Creative Code Blocks</h3>
-                        <p>Perfect startup module. Young minds learn logic loops, boolean switches, variables, and sprite control via visual building blocks before stepping up to Python scripting.</p>
-                        
-                        <div class="program-meta">
-                            <div class="program-meta-item">
-                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-                                <span>Age Group: 6–9</span>
-                            </div>
-                            <div class="program-meta-item">
-                                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 2 22 6.48 22 12s-4.48-10-10.01-10zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-                                <span>12 Weeks</span>
-                            </div>
-                        </div>
-                        
-                        <a href="contact.html" class="btn btn-primary" style="width: 100%;">Enroll Path</a>
-                    </div>
-                </div>
+        <!-- Floating Graphics -->
+        <div class="ref-floating-icon ref-icon-bulb">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18h6m-5 3h4M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7z"/>
+            </svg>
+        </div>
+        <div class="ref-floating-icon ref-icon-code">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+            </svg>
+        </div>
 
-                <!-- Card 2: Robotics Labs -->
-                <div class="program-extended-card">
-                    <div class="program-ext-img">
-                        <span class="program-badge">Robotics Kits</span>
-                        <img src="assets/competition-robot.png" alt="Robotics chassis tracking on trackway">
-                    </div>
-                    <div class="program-ext-body">
-                        <h3>Sensor Robotics Lab</h3>
-                        <p>Assemble custom physical chassis, wire DC motors to drive shields, and program ultrasonic distance sensors to steer robots autonomously through target mazes.</p>
-                        
-                        <div class="program-meta">
-                            <div class="program-meta-item">
-                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-                                <span>Age Group: 9–12</span>
-                            </div>
-                            <div class="program-meta-item">
-                                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 2 22 6.48 22 12s-4.48-10-10.01-10zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-                                <span>16 Weeks</span>
-                            </div>
-                        </div>
-                        
-                        <a href="contact.html" class="btn btn-red" style="width: 100%;">Enroll Path</a>
-                    </div>
-                </div>
-
-                <!-- Card 3: AI -->
-                <div class="program-extended-card">
-                    <div class="program-ext-img">
-                        <span class="program-badge">AI & Machine Learning</span>
-                        <img src="assets/hero-robot.png" alt="RoboKidz robot face rendering">
-                    </div>
-                    <div class="program-ext-body">
-                        <h3>Future AI & ML Explorers</h3>
-                        <p>Introduce smart algorithms! Kids feed custom images to training sets, create speech commands, and discover the algorithms running modern autonomous cars.</p>
-                        
-                        <div class="program-meta">
-                            <div class="program-meta-item">
-                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-                                <span>Age Group: 12–16</span>
-                            </div>
-                            <div class="program-meta-item">
-                                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 2 22 6.48 22 12s-4.48-10-10.01-10zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-                                <span>16 Weeks</span>
-                            </div>
-                        </div>
-                        
-                        <a href="contact.html" class="btn btn-yellow" style="width: 100%;">Enroll Path</a>
-                    </div>
-                </div>
-
-                <!-- Card 4: Electronics -->
-                <div class="program-extended-card">
-                    <div class="program-ext-img">
-                        <span class="program-badge">Circuits & Arduino</span>
-                        <img src="assets/student-project.png" alt="Breadboard layout assembly">
-                    </div>
-                    <div class="program-ext-body">
-                        <h3>Smart Electronics & Microcontrollers</h3>
-                        <p>Read electrical circuits, connect breadboards safely, integrate light sensors, and write C++ routines for Arduino to command RGB light modules.</p>
-                        
-                        <div class="program-meta">
-                            <div class="program-meta-item">
-                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-                                <span>Age Group: 11–15</span>
-                            </div>
-                            <div class="program-meta-item">
-                                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 2 22 6.48 22 12s-4.48-10-10.01-10zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-                                <span>12 Weeks</span>
-                            </div>
-                        </div>
-                        
-                        <a href="contact.html" class="btn btn-primary" style="width: 100%;">Enroll Path</a>
-                    </div>
-                </div>
-
-                <!-- Card 5: Holiday Workshop -->
-                <div class="program-extended-card">
-                    <div class="program-ext-img">
-                        <span class="program-badge">Short Term Camps</span>
-                        <img src="assets/workshop-kids.png" alt="Kids laughing in a class workshop">
-                    </div>
-                    <div class="program-ext-body">
-                        <h3>Maker Space Workshops</h3>
-                        <p>High-energy weekend bootcamps. Students collaborate in fast-paced 2-day challenges to prototype smart fans, solar tracking flags, or automated toys.</p>
-                        
-                        <div class="program-meta">
-                            <div class="program-meta-item">
-                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-                                <span>Age Group: 6–16</span>
-                            </div>
-                            <div class="program-meta-item">
-                                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 2 22 6.48 22 12s-4.48-10-10.01-10zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-                                <span>2 Days</span>
-                            </div>
-                        </div>
-                        
-                        <a href="contact.html" class="btn btn-red" style="width: 100%;">Book Workshop</a>
-                    </div>
-                </div>
-
-                <!-- Card 6: Projects -->
-                <div class="program-extended-card">
-                    <div class="program-ext-img">
-                        <span class="program-badge">Advanced Portfolio</span>
-                        <img src="assets/competition-robot.png" alt="Competitive robot testing rig">
-                    </div>
-                    <div class="program-ext-body">
-                        <h3>Project-Based Innovation</h3>
-                        <p>Advance beyond standard kits. Seniors draft custom circuits, program sensory microchips, and design real patent-ready models for innovation fairs.</p>
-                        
-                        <div class="program-meta">
-                            <div class="program-meta-item">
-                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-                                <span>Age Group: 13–16</span>
-                            </div>
-                            <div class="program-meta-item">
-                                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 2 22 6.48 22 12s-4.48-10-10.01-10zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-                                <span>20 Weeks</span>
-                            </div>
-                        </div>
-                        
-                        <a href="contact.html" class="btn btn-yellow" style="width: 100%;">Enroll Path</a>
-                    </div>
+        <div class="ref-hero-container">
+            <div class="ref-hero-left">
+                <span class="ref-hero-tag">OUR PROGRAMS</span>
+                <h1 class="ref-hero-title">Our Programs:<br>Shaping <span class="highlight">Future Innovators</span></h1>
+                <p class="ref-hero-desc">Hands-on learning, real-world projects, and expert mentorship to help kids build skills, spark creativity, and stay ahead in the future.</p>
+            </div>
+            
+            <div class="ref-hero-right">
+                <div class="ref-hero-image-wrapper">
+                    <img src="assets/hero-robot-ref.png" alt="RoboKidz 3D Robot with Children" class="ref-hero-img">
                 </div>
             </div>
         </div>
+
+        <!-- Wave Transition SVG -->
+        <div class="ref-hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" preserveAspectRatio="none">
+                <path d="M0,32L80,42.7C160,53,320,75,480,74.7C640,75,800,53,960,42.7C1120,32,1280,32,1360,32L1440,32L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" fill="#ffffff"></path>
+            </svg>
+        </div>
     </section>
 
-    <!-- Cognitive Benefits Section -->
-    <section class="benefits-section section-padding" style="background-color: var(--bg-secondary);">
-        <div class="container">
-            <div class="section-header scroll-reveal">
-                <span class="section-tag green">Cognitive Growth</span>
-                <h2>What Children Develop</h2>
-                <p>Beyond coding syntax, RoboKidz programs target and strengthen soft and hard cognitive skills.</p>
-            </div>
-
-            <div class="benefits-grid scroll-reveal">
-                <!-- Benefit 1 -->
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 13.33L4.5 12.3l7.5-4.09 7.5 4.09-7.5 4.04z"/></svg>
+    <!-- Programs Grid Section (4 Cards) -->
+    <section class="ref-programs-section">
+        <div class="ref-programs-container">
+            <div class="ref-programs-grid">
+                
+                <!-- Card 1: In-house Program (Red Theme) -->
+                <div class="ref-card">
+                    <div class="ref-card-img-container">
+                        <!-- Top Circular Icon Badge Overlapping Top Right -->
+                        <div class="ref-card-badge red">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                            </svg>
+                        </div>
+                        <img src="assets/card-inhouse.png" alt="In-house Program" class="ref-card-img">
                     </div>
-                    <h3>Logical Framing</h3>
-                    <p>Understanding chronological algorithms, conditionals (If-Else loops), and code structures.</p>
+                    <div class="ref-card-content">
+                        <div>
+                            <h2 class="ref-card-title red">In-house Program</h2>
+                            <div class="ref-card-subtitle">Learn Together. Grow Together.</div>
+                            <p class="ref-card-desc">Structured curriculum delivered within schools or institutions with expert guidance and modern resources.</p>
+                            
+                            <ul class="ref-card-bullets">
+                                <li class="ref-card-bullet-item">
+                                    <span class="ref-check-icon red">&#10003;</span>
+                                    <span>School & institution based</span>
+                                </li>
+                                <li class="ref-card-bullet-item">
+                                    <span class="ref-check-icon red">&#10003;</span>
+                                    <span>Customized curriculum</span>
+                                </li>
+                                <li class="ref-card-bullet-item">
+                                    <span class="ref-check-icon red">&#10003;</span>
+                                    <span>Progress tracking & reports</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <a href="contact.html" class="ref-card-btn red">Learn More <span>&rarr;</span></a>
+                    </div>
                 </div>
 
-                <!-- Benefit 2 -->
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <svg viewBox="0 0 24 24"><path d="M12 2c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 19.4c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l2.79-2.79C10.09 18.66 11.02 19 12 19c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg>
+                <!-- Card 2: Innovation Labs (Green Theme) -->
+                <div class="ref-card">
+                    <div class="ref-card-img-container">
+                        <!-- Top Circular Icon Badge Overlapping Top Right -->
+                        <div class="ref-card-badge green">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M19.8 18.4L14 10.67V5h1c.55 0 1-.45 1-1s-.45-1-1-1H9c-.55 0-1 .45-1 1s.45 1 1 1h1v5.67L4.2 18.4c-.67.9-.03 2.16 1.1 2.16h13.4c1.13 0 1.77-1.26 1.1-2.16z"/>
+                            </svg>
+                        </div>
+                        <img src="assets/card-innovation.png" alt="Innovation Labs" class="ref-card-img">
                     </div>
-                    <h3>Resilient Problem Solving</h3>
-                    <p>Learning how to isolate wiring problems, trace bugs in scripts, and build functional iterations.</p>
+                    <div class="ref-card-content">
+                        <div>
+                            <h2 class="ref-card-title green">Innovation Labs</h2>
+                            <div class="ref-card-subtitle">Innovate. Experiment. Excel.</div>
+                            <p class="ref-card-desc">Advanced labs for young innovators to experiment with robotics, AI, IoT and emerging technologies and bring ideas to life.</p>
+                            
+                            <ul class="ref-card-bullets">
+                                <li class="ref-card-bullet-item">
+                                    <span class="ref-check-icon green">&#10003;</span>
+                                    <span>Advanced technology access</span>
+                                </li>
+                                <li class="ref-card-bullet-item">
+                                    <span class="ref-check-icon green">&#10003;</span>
+                                    <span>Mentor-led innovation</span>
+                                </li>
+                                <li class="ref-card-bullet-item">
+                                    <span class="ref-check-icon green">&#10003;</span>
+                                    <span>Build real-world solutions</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <a href="contact.html" class="ref-card-btn green">Learn More <span>&rarr;</span></a>
+                    </div>
                 </div>
 
-                <!-- Benefit 3 -->
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <svg viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/></svg>
+                <!-- Card 3: Afterschool Program (Orange Theme) -->
+                <div class="ref-card">
+                    <div class="ref-card-img-container">
+                        <!-- Top Circular Icon Badge Overlapping Top Right -->
+                        <div class="ref-card-badge orange">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+                            </svg>
+                        </div>
+                        <img src="assets/card-afterschool.png" alt="Afterschool Program" class="ref-card-img">
                     </div>
-                    <h3>Spatial Creativity</h3>
-                    <p>Designing structures, balancing torque, using mechanical gears, and working with custom dimensions.</p>
+                    <div class="ref-card-content">
+                        <div>
+                            <h2 class="ref-card-title orange">Afterschool Program</h2>
+                            <div class="ref-card-subtitle">Learn Beyond School.</div>
+                            <p class="ref-card-desc">Engaging afterschool programs that help kids explore their interests and build future-ready skills in a safe environment.</p>
+                            
+                            <ul class="ref-card-bullets">
+                                <li class="ref-card-bullet-item">
+                                    <span class="ref-check-icon orange">&#10003;</span>
+                                    <span>After school learning</span>
+                                </li>
+                                <li class="ref-card-bullet-item">
+                                    <span class="ref-check-icon orange">&#10003;</span>
+                                    <span>Skill development</span>
+                                </li>
+                                <li class="ref-card-bullet-item">
+                                    <span class="ref-check-icon orange">&#10003;</span>
+                                    <span>Fun & engaging projects</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <a href="contact.html" class="ref-card-btn orange">Learn More <span>&rarr;</span></a>
+                    </div>
                 </div>
 
-                <!-- Benefit 4 -->
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zM8 11c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3z"/></svg>
+                <!-- Card 4: Workshops (Blue Theme) -->
+                <div class="ref-card">
+                    <div class="ref-card-img-container">
+                        <!-- Top Circular Icon Badge Overlapping Top Right -->
+                        <div class="ref-card-badge blue">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.38-1 1.72V7h4a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h4V5.72A2.001 2.001 0 0 1 10 4a2 2 0 0 1 2-2zm-3 9a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-5 4v1h4v-1h-4z"/>
+                            </svg>
+                        </div>
+                        <img src="assets/card-workshop.png" alt="Workshops" class="ref-card-img">
                     </div>
-                    <h3>Team Collaboration</h3>
-                    <p>Working in pairs to brainstorm features, assign programming/building roles, and present results.</p>
+                    <div class="ref-card-content">
+                        <div>
+                            <h2 class="ref-card-title blue">Workshops</h2>
+                            <div class="ref-card-subtitle">Learn. Build. Create.</div>
+                            <p class="ref-card-desc">Interactive workshops introducing kids to exciting STEM topics through fun and engaging hands-on activities.</p>
+                            
+                            <ul class="ref-card-bullets">
+                                <li class="ref-card-bullet-item">
+                                    <span class="ref-check-icon blue">&#10003;</span>
+                                    <span>Short-term focused sessions</span>
+                                </li>
+                                <li class="ref-card-bullet-item">
+                                    <span class="ref-check-icon blue">&#10003;</span>
+                                    <span>Practical learning</span>
+                                </li>
+                                <li class="ref-card-bullet-item">
+                                    <span class="ref-check-icon blue">&#10003;</span>
+                                    <span>Certificate of participation</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <a href="contact.html" class="ref-card-btn blue">Learn More <span>&rarr;</span></a>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="faq-section section-padding">
-        <div class="container">
-            <div class="section-header scroll-reveal">
-                <span class="section-tag red">Help Desk</span>
-                <h2>Frequently Asked Questions</h2>
-                <p>Answers to common questions about enrollment, safety, equipment, and coding pathways.</p>
-            </div>
-
-            <div class="faq-container scroll-reveal">
-                <!-- FAQ 1 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Does my child need prior coding experience?</h3>
-                        <div class="faq-icon-box">
-                            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                        </div>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-content">
-                            Not at all! We start our younger group paths (ages 6–9) with visual blocks that require no typing skills. We guide them step-by-step into syntaxes as they gain confidence.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- FAQ 2 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Do we need to buy any hardware kits?</h3>
-                        <div class="faq-icon-box">
-                            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                        </div>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-content">
-                            All necessary electronics, chassis units, sensors, and computers are provided for student use inside our labs. If you wish to build at home, we sell take-home kit boxes at our lobby counter.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- FAQ 3 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Are the electronics safe for children?</h3>
-                        <div class="faq-icon-box">
-                            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                        </div>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-content">
-                            Absolutely. We use low-voltage DC currents (5V–9V powered by AA batteries or USB power). There is no high-voltage AC exposure, and no soldering is done by children in junior modules.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- FAQ 4 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What is the duration of each batch class?</h3>
-                        <div class="faq-icon-box">
-                            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                        </div>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-content">
-                            Regular pathways meet once a week on weekends for 2 hours. Weekend workshops and special holiday intensive camps run daily over designated schedules.
-                        </div>
-                    </div>
+    <!-- Learning Journey Section -->
+    <section class="ref-journey-section">
+        <div class="ref-journey-container">
+            
+            <div class="ref-journey-heading-wrapper">
+                <h2 class="ref-journey-title">Our Learning Journey</h2>
+                <div class="ref-journey-scribble">
+                    <svg viewBox="0 0 100 20" fill="none" stroke="#e53935" stroke-width="3" stroke-linecap="round">
+                        <path d="M5,10 Q25,2 45,10 T85,10 T100,10"/>
+                    </svg>
                 </div>
             </div>
+
+            <div class="ref-journey-steps">
+                <div class="ref-journey-line"></div>
+
+                <!-- Milestone 1: Start -->
+                <div class="ref-journey-step-item">
+                    <div class="ref-journey-icon-box blue">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M9.19 6.35c-2.04 2.29-3.44 5.58-3.57 9.15l2.67-2.67c.39-.39 1.02-.39 1.41 0s.39 1.02 0 1.41l-4.39 4.39c-.39.39-1.02.39-1.41 0L.51 15.24c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l2.12 2.12c.31-4.07 1.87-7.85 4.25-10.42 2.65-2.87 6.31-4.5 10.21-4.53.55 0 1 .45 1 1 0 3.9-1.63 7.56-4.5 10.21z"/>
+                        </svg>
+                    </div>
+                    <div class="ref-journey-step-tag blue">Start</div>
+                    <h3 class="ref-journey-step-title">Discover & Learn</h3>
+                    <p class="ref-journey-step-desc">Kids explore new concepts and get introduced to the exciting world of STEM.</p>
+                </div>
+
+                <!-- Milestone 2: Build -->
+                <div class="ref-journey-step-item">
+                    <div class="ref-journey-icon-box red">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+                        </svg>
+                    </div>
+                    <div class="ref-journey-step-tag red">Build</div>
+                    <h3 class="ref-journey-step-title">Hands-on Projects</h3>
+                    <p class="ref-journey-step-desc">Students build real projects through practical activities and guided learning.</p>
+                </div>
+
+                <!-- Milestone 3: Grow -->
+                <div class="ref-journey-step-item">
+                    <div class="ref-journey-icon-box gold">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H8v2h8v-2h-3v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/>
+                        </svg>
+                    </div>
+                    <div class="ref-journey-step-tag gold">Grow</div>
+                    <h3 class="ref-journey-step-title">Skills & Confidence</h3>
+                    <p class="ref-journey-step-desc">They develop critical thinking, creativity, and problem-solving skills with confidence.</p>
+                </div>
+
+                <!-- Milestone 4: Succeed -->
+                <div class="ref-journey-step-item">
+                    <div class="ref-journey-icon-box green">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                        </svg>
+                    </div>
+                    <div class="ref-journey-step-tag green">Succeed</div>
+                    <h3 class="ref-journey-step-title">Innovate & Lead</h3>
+                    <p class="ref-journey-step-desc">Our students become future innovators and leaders of tomorrow.</p>
+                </div>
+
+            </div>
+
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section section-padding">
-        <div class="container scroll-reveal">
-            <div class="cta-banner">
-                <div class="cta-decorations">
-                    <svg class="cta-decor-1" viewBox="0 0 100 100"><path d="M50 35c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15zm8.3-33l2.9-6.9c.3-.8-.1-1.7-.9-2l-5.8-2.4c-.8-.3-1.7.1-2 .9l-2.9 6.9c-2.4-.4-4.8-.4-7.2 0l-2.9-6.9c-.3-.8-1.2-1.2-2-.9L24.6 9c-.8.3-1.2 1.2-.9 2l2.9 6.9c-1.8 1.6-3.3 3.6-4.4 5.9l-6.9-2.9c-.8-.3-1.7.1-2 .9l-2.4 5.8c-.3.8.1 1.7.9 2l6.9 2.9c-.4 2.4-.4 4.8 0 7.2l-6.9 2.9c-.8.3-1.2 1.2-.9 2l2.4 5.8c.3.8 1.2 1.2 2 .9l6.9-2.9c1.1 2.3 2.6 4.3 4.4 5.9l-2.9 6.9c-.3.8.1 1.7.9 2l5.8 2.4c.8.3 1.7-.1 2-.9l2.9-6.9c2.4.4 4.8.4 7.2 0l2.9 6.9c.3.8 1.2 1.2 2 .9l5.8-2.4c.8-.3 1.2-1.2.9-2l-2.9-6.9c1.8-1.6 3.3-3.6 4.4-5.9l6.9 2.9c.8.3 1.7-.1 2-.9l2.4-5.8c.3-.8-.1-1.7-.9-2l-6.9-2.9c.4-2.4.4-4.8 0-7.2l6.9-2.9c.8-.3 1.2-1.2.9-2l-2.4-5.8c-.3-.8-1.2-1.2-2-.9l-6.9 2.9c-1.1-2.3-2.6-4.3-4.4-5.9z"/></svg>
-                    <svg class="cta-decor-2" viewBox="0 0 100 100"><path d="M50 35c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15zm8.3-33l2.9-6.9c.3-.8-.1-1.7-.9-2l-5.8-2.4c-.8-.3-1.7.1-2 .9l-2.9 6.9c-2.4-.4-4.8-.4-7.2 0l-2.9-6.9c-.3-.8-1.2-1.2-2-.9L24.6 9c-.8.3-1.2 1.2-.9 2l2.9 6.9c-1.8 1.6-3.3 3.6-4.4 5.9l-6.9-2.9c-.8-.3-1.7.1-2 .9l-2.4 5.8c-.3.8.1 1.7.9 2l6.9 2.9c-.4 2.4-.4 4.8 0 7.2l-6.9 2.9c-.8.3-1.2 1.2-.9 2l2.4 5.8c.3.8 1.2 1.2 2 .9l6.9-2.9c1.1 2.3 2.6 4.3 4.4 5.9l-2.9 6.9c-.3.8.1 1.7.9 2l5.8 2.4c.8.3 1.7-.1 2-.9l2.9-6.9c2.4.4 4.8.4 7.2 0l2.9 6.9c.3.8 1.2 1.2 2 .9l5.8-2.4c.8-.3 1.2-1.2.9-2l-2.9-6.9c1.8-1.6 3.3-3.6 4.4-5.9l6.9 2.9c.8.3 1.7-.1 2-.9l2.4-5.8c.3-.8-.1-1.7-.9-2l-6.9-2.9c.4-2.4.4-4.8 0-7.2l6.9-2.9c.8-.3 1.2-1.2.9-2l-2.4-5.8c-.3-.8-1.2-1.2-2-.9l-6.9 2.9c-1.1-2.3-2.6-4.3-4.4-5.9z"/></svg>
-                </div>
-                <div class="cta-banner-content">
-                    <h2>Ready to Build the Future?</h2>
-                    <p>Sign up your child for a free hands-on diagnostic session today. Spaces are limited for our upcoming intake term batches!</p>
-                    <a href="contact.html" class="btn btn-yellow">Enroll Today</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-        <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <!-- Column 1: Logo & About -->
@@ -357,16 +326,16 @@
                     <a href="index.html" class="footer-logo">
                         <img src="assets/logo.avif" alt="RoboKidz Logo">
                     </a>
-                    <p class="footer-desc">Empowering children through Robotics, STEM, Coding & AI.</p>
+                    <p class="footer-desc">Empowering kids through Robotics, STEM, Coding & AI.</p>
                     <div class="social-links-circular">
                         <a href="#" class="social-icon-circle fb" aria-label="Facebook">
-                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                         </a>
                         <a href="#" class="social-icon-circle ig" aria-label="Instagram">
-                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                         </a>
                         <a href="#" class="social-icon-circle yt" aria-label="YouTube">
-                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.517 3.545 12 3.545 12 3.545s-7.517 0-9.388.507a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.871.507 9.388.507 9.388.507s7.517 0 9.388-.507a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#FFFFFF"/></svg>
                         </a>
                         <a href="#" class="social-icon-circle li" aria-label="LinkedIn">
                             <svg viewBox="0 0 24 24"><path fill="currentColor" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -390,10 +359,10 @@
                 <div class="footer-col">
                     <h4>Programs</h4>
                     <ul class="footer-links-list">
-                        <li><a href="programs.html">Junior Robotics (Grade 1–4)</a></li>
-                        <li><a href="programs.html">Senior Robotics (Grade 5–8)</a></li>
-                        <li><a href="programs.html">Coding & AI (Grade 11–13)</a></li>
-                        <li><a href="programs.html">Advanced Robotics (Grade 9 above)</a></li>
+                        <li><a href="programs.html">Workshops</a></li>
+                        <li><a href="programs.html">In-house Program</a></li>
+                        <li><a href="programs.html">Afterschool Program</a></li>
+                        <li><a href="programs.html">Innovation Labs</a></li>
                     </ul>
                 </div>
 
@@ -417,7 +386,7 @@
                             <span class="contact-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                             </span>
-                            <span class="contact-text">123 Innovation Street, Tech City, India – 600001</span>
+                            <span class="contact-text">123 Innovation Street, Tech City, India - 600001</span>
                         </li>
                     </ul>
                 </div>
@@ -426,11 +395,11 @@
                 <div class="footer-col">
                     <h4>Newsletter</h4>
                     <p class="newsletter-desc">Subscribe to get updates on our programs and events.</p>
-                    <form class="newsletter-pill-form">
+                    <form class="newsletter-pill-form" onsubmit="event.preventDefault();">
                         <div class="newsletter-input-wrapper">
                             <input type="email" placeholder="Enter your email" required>
                             <button type="submit" class="newsletter-submit-btn" aria-label="Subscribe">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                             </button>
                         </div>
                     </form>
@@ -439,17 +408,17 @@
 
             <!-- Footer Bottom -->
             <div class="footer-bottom">
-                <p>&copy; 2026 RoboKidz Education. All Rights Reserved.</p>
+                <p>&copy; 2024 Robokidz. All Rights Reserved.</p>
                 <ul class="footer-bottom-links">
                     <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Sitemap</a></li>
+                    <li><span class="footer-divider">|</span></li>
+                    <li><a href="#">Terms & Conditions</a></li>
                 </ul>
             </div>
         </div>
     </footer>
 
-    <!-- Main JavaScript Application -->
+    <!-- Main JS Application -->
     <script src="js/main.js"></script>
 </body>
 </html>

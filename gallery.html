@@ -4,140 +4,257 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | RoboKidz STEM Education</title>
-    <meta name="description" content="Explore photos and student project portfolios from RoboKidz robotics workshops, hardware camps, national competitions, and learning events.">
+    <meta name="description" content="Moments of learning, creativity & innovation. Explore photos of our robotics labs, coding workshops, competitions, and student projects.">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232F80ED'/><circle cx='50' cy='50' r='20' fill='white'/></svg>">
-    <!-- Main Stylesheet -->
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Main, Programs & Gallery Redesign Stylesheets -->
     <link rel="stylesheet" href="css/style.css?v=1.4">
-    <link rel="stylesheet" href="css/mobile.css?v=1.0">
+    <link rel="stylesheet" href="css/programs-redesign.css?v=1.1">
+    <link rel="stylesheet" href="css/gallery-redesign.css?v=1.0">
 </head>
-<body>
+<body class="gal-body">
 
-    <!-- Floating Background Elements -->
-    <svg class="decoration-shape decoration-gear-blue" viewBox="0 0 100 100">
-        <path d="M50 35c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15zm0 25c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10zm8.3-33l2.9-6.9c.3-.8-.1-1.7-.9-2l-5.8-2.4c-.8-.3-1.7.1-2 .9l-2.9 6.9c-2.4-.4-4.8-.4-7.2 0l-2.9-6.9c-.3-.8-1.2-1.2-2-.9L24.6 9c-.8.3-1.2 1.2-.9 2l2.9 6.9c-1.8 1.6-3.3 3.6-4.4 5.9l-6.9-2.9c-.8-.3-1.7.1-2 .9l-2.4 5.8c-.3.8.1 1.7.9 2l6.9 2.9c-.4 2.4-.4 4.8 0 7.2l-6.9 2.9c-.8.3-1.2 1.2-.9 2l2.4 5.8c.3.8 1.2 1.2 2 .9l6.9-2.9c1.1 2.3 2.6 4.3 4.4 5.9l-2.9 6.9c-.3.8.1 1.7.9 2l5.8 2.4c.8.3 1.7-.1 2-.9l2.9-6.9c2.4.4 4.8.4 7.2 0l2.9 6.9c.3.8 1.2 1.2 2 .9l5.8-2.4c.8-.3 1.2-1.2.9-2l-2.9-6.9c1.8-1.6 3.3-3.6 4.4-5.9l6.9 2.9c.8.3 1.7-.1 2-.9l2.4-5.8c.3-.8-.1-1.7-.9-2l-6.9-2.9c.4-2.4.4-4.8 0-7.2l-6.9-2.9c.8-.3 1.2-1.2.9-2l-2.4-5.8c-.3-.8-1.2-1.2-2-.9l-6.9 2.9c-1.1-2.3-2.6-4.3-4.4-5.9z"/>
-    </svg>
-    <div class="decoration-shape decoration-dots" style="top: 20%; right: 4%;"></div>
-
-    <!-- Sticky Header -->
-    <header class="header">
-        <div class="container">
-            <a href="index.html" class="logo">
+    <!-- Sticky / Floating Navigation Bar -->
+    <header class="ref-header">
+        <div class="ref-nav-capsule">
+            <a href="index.html" class="ref-logo">
                 <img src="assets/logo.avif" alt="RoboKidz Logo">
             </a>
             
-            <button class="mobile-toggle" aria-label="Toggle Navigation">
+            <button class="ref-mobile-toggle" aria-label="Toggle Navigation">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="programs.html" class="nav-link">Programs</a></li>
-                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-                <li class="nav-btn-mobile"><a href="contact.html" class="btn btn-red">Enroll Now &rarr;</a></li>
+            <ul class="ref-nav-menu">
+                <li><a href="index.html" class="ref-nav-link">Home</a></li>
+                <li><a href="about.html" class="ref-nav-link">About</a></li>
+                <li><a href="programs.html" class="ref-nav-link">Programs</a></li>
+                <li><a href="gallery.html" class="ref-nav-link active">Gallery</a></li>
+                <li><a href="contact.html" class="ref-nav-link">Contact</a></li>
             </ul>
             
-            <a href="contact.html" class="btn btn-red header-btn">Enroll Now &rarr;</a>
+            <a href="contact.html" class="ref-btn-enroll">Enroll Now <span>&rarr;</span></a>
         </div>
     </header>
 
     <!-- Gallery Hero Section -->
-    <section class="gallery-hero">
-        <div class="container reveal-on-load">
-            <span class="section-tag blue">Showcase</span>
-            <h1>Our Student Creations</h1>
-            <p>A visual log of robotic innovations, coding jams, team tournaments, and live lab creations.</p>
+    <section class="gal-hero-section">
+        <div class="gal-container">
+            <div class="gal-hero-container">
+                
+                <!-- Left Hero Content -->
+                <div class="gal-hero-left">
+                    
+                    <div class="gal-label-wrapper">
+                        <span class="gal-label">OUR GALLERY</span>
+                        <svg class="gal-scribble" viewBox="0 0 100 20" fill="none" stroke="#ef4444" stroke-width="3" stroke-linecap="round">
+                            <path d="M5,10 Q25,2 45,10 T85,10 T100,10"/>
+                        </svg>
+                    </div>
+                    
+                    <h1 class="gal-title">Moments of Learning,<br><span class="text-blue">Creativity</span> & <span class="text-red">Innovation</span></h1>
+                </div>
+
+                <!-- Right Hero Illustration with Decor -->
+                <div class="gal-hero-right">
+                    <div class="gal-hero-backdrop"></div>
+                    <img src="assets/gallery-hero-3d.png" alt="RoboKidz 3D Robot & Children Gallery Scene" class="gal-hero-img">
+                    
+                    <!-- Decorative Floating Elements -->
+                    <div class="gal-deco gal-deco-star">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="gal-deco gal-deco-gear">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+                        </svg>
+                    </div>
+
+                    <div class="gal-deco gal-deco-dots">
+                        <span></span><span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span><span></span>
+                    </div>
+
+                    <div class="gal-deco gal-deco-squiggle">
+                        <svg width="32" height="16" viewBox="0 0 50 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+                            <path d="M2 10 Q12 2 22 10 T42 10"/>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Horizontal Divider -->
+            <div class="gal-hero-divider"></div>
+
+            <!-- Category Filter Navigation Bar -->
+            <div class="gal-filter-bar" role="tablist">
+                
+                <!-- Filter 1: All Photos (Active) -->
+                <button class="gal-filter-btn active" data-filter="all" role="tab">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M4 4h4v4H4V4zm6 0h4v4h-4V4zm6 0h4v4h-4V4M4 10h4v4H4v-4zm6 0h4v4h-4v-4zm6 0h4v4h-4v-4M4 16h4v4H4v-4zm6 0h4v4h-4v-4zm6 0h4v4h-4v-4z"/>
+                    </svg>
+                    <span>All Photos</span>
+                </button>
+
+                <!-- Filter 2: Workshops -->
+                <button class="gal-filter-btn icon-blue" data-filter="workshops" role="tab">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.38-1 1.72V7h4a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h4V5.72A2.001 2.001 0 0 1 10 4a2 2 0 0 1 2-2zm-3 9a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-5 4v1h4v-1h-4z"/>
+                    </svg>
+                    <span>Workshops</span>
+                </button>
+
+                <!-- Filter 3: In-house Program -->
+                <button class="gal-filter-btn icon-red" data-filter="in-house" role="tab">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                    </svg>
+                    <span>In-house Program</span>
+                </button>
+
+                <!-- Filter 4: Project -->
+                <button class="gal-filter-btn icon-orange" data-filter="project" role="tab">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+                    </svg>
+                    <span>Project</span>
+                </button>
+
+                <!-- Filter 5: Innovation Labs -->
+                <button class="gal-filter-btn icon-green" data-filter="innovation" role="tab">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M19.8 18.4L14 10.67V5h1c.55 0 1-.45 1-1s-.45-1-1-1H9c-.55 0-1 .45-1 1s.45 1 1 1h1v5.67L4.2 18.4c-.67.9-.03 2.16 1.1 2.16h13.4c1.13 0 1.77-1.26 1.1-2.16z"/>
+                    </svg>
+                    <span>Innovation Labs</span>
+                </button>
+
+                <!-- Filter 6: Events -->
+                <button class="gal-filter-btn icon-purple" data-filter="events" role="tab">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/>
+                    </svg>
+                    <span>Events</span>
+                </button>
+
+            </div>
         </div>
     </section>
 
-    <!-- Filters and Masonry Grid Section -->
-    <section class="gallery-section section-padding">
-        <div class="container">
-            <!-- Filter Tabs -->
-            <div class="gallery-filter scroll-reveal">
-                <button class="filter-btn active" data-filter="all">All Photos</button>
-                <button class="filter-btn" data-filter="workshops">Workshops</button>
-                <button class="filter-btn" data-filter="projects">Projects</button>
-                <button class="filter-btn" data-filter="competitions">Competitions</button>
-                <button class="filter-btn" data-filter="events">Events</button>
-            </div>
-
-            <!-- Masonry Grid -->
-            <div class="gallery-grid scroll-reveal">
-                <!-- Item 1 -->
-                <div class="gallery-item" data-category="workshops">
-                    <img src="assets/workshop-kids.png" alt="Robotics learning workshop">
-                    <div class="gallery-overlay">
-                        <h4>Collaborative Workshop Day</h4>
-                        <p>Workshops</p>
+    <!-- Gallery Grid Section (4 Columns x 3 Rows = 12 Cards) -->
+    <section class="gal-grid-section">
+        <div class="gal-container">
+            <div class="gal-grid">
+                
+                <!-- Card 1: Workshops -->
+                <div class="gal-card" data-category="workshops">
+                    <img src="assets/student-project.png" alt="Two boys assembling robotics circuits at classroom desk" class="gal-card-img">
+                    <div class="gal-card-overlay">
+                        <span class="gal-card-caption">Hands-on Robotics Assembly</span>
                     </div>
                 </div>
 
-                <!-- Item 2 -->
-                <div class="gallery-item" data-category="competitions">
-                    <img src="assets/competition-robot.png" alt="Students cheering on robot test run">
-                    <div class="gallery-overlay">
-                        <h4>Speed Track Finals</h4>
-                        <p>Competitions</p>
+                <!-- Card 2: In-house Program -->
+                <div class="gal-card" data-category="in-house">
+                    <img src="assets/card-afterschool.png" alt="Young girl writing notes with laptop and robot car" class="gal-card-img">
+                    <div class="gal-card-overlay">
+                        <span class="gal-card-caption">Creative Problem Solving</span>
                     </div>
                 </div>
 
-                <!-- Item 3 -->
-                <div class="gallery-item" data-category="projects">
-                    <img src="assets/student-project.png" alt="Child building circuit board">
-                    <div class="gallery-overlay">
-                        <h4>Embedded Arduino Wiring</h4>
-                        <p>Projects</p>
+                <!-- Card 3: Events -->
+                <div class="gal-card" data-category="events">
+                    <img src="assets/workshop-kids.png" alt="Group of students holding STEM achievement certificates" class="gal-card-img">
+                    <div class="gal-card-overlay">
+                        <span class="gal-card-caption">Certification Ceremony</span>
                     </div>
                 </div>
 
-                <!-- Item 4 -->
-                <div class="gallery-item" data-category="students">
-                    <img src="assets/mission-kids.png" alt="Kids laughing and looking at robot">
-                    <div class="gallery-overlay">
-                        <h4>Cooperative Robot Assembly</h4>
-                        <p>Students</p>
+                <!-- Card 4: Innovation Labs -->
+                <div class="gal-card" data-category="innovation">
+                    <img src="assets/program-junior.png" alt="Students collaborating on laptop and robotics chassis" class="gal-card-img">
+                    <div class="gal-card-overlay">
+                        <span class="gal-card-caption">Sensor Robotics Lab</span>
                     </div>
                 </div>
 
-                <!-- Item 5 -->
-                <div class="gallery-item" data-category="events">
-                    <img src="assets/hero-robot.png" alt="RoboKidz character illustration">
-                    <div class="gallery-overlay">
-                        <h4>AI Mascot Presentation</h4>
-                        <p>Events</p>
+                <!-- Card 5: In-house Program -->
+                <div class="gal-card" data-category="in-house">
+                    <img src="assets/team-arun.png" alt="Instructor guiding young student with robot car assembly" class="gal-card-img">
+                    <div class="gal-card-overlay">
+                        <span class="gal-card-caption">Expert Mentor Guidance</span>
                     </div>
                 </div>
 
-                <!-- Item 6 -->
-                <div class="gallery-item" data-category="events">
-                    <img src="assets/workshop-kids.png" alt="Classroom learning event">
-                    <div class="gallery-overlay">
-                        <h4>Annual STEM Bootcamp</h4>
-                        <p>Events</p>
+                <!-- Card 6: Project -->
+                <div class="gal-card" data-category="project">
+                    <img src="assets/competition-robot.png" alt="Three students standing together with robotics competition models" class="gal-card-img">
+                    <div class="gal-card-overlay">
+                        <span class="gal-card-caption">Robotics Tournament Models</span>
                     </div>
                 </div>
 
-                <!-- Item 7 -->
-                <div class="gallery-item" data-category="workshops">
-                    <img src="assets/student-project.png" alt="Circuit board setup closeup">
-                    <div class="gallery-overlay">
-                        <h4>Sensory Integration Labs</h4>
-                        <p>Workshops</p>
+                <!-- Card 7: Events -->
+                <div class="gal-card" data-category="events">
+                    <img src="assets/hero-robot-white.png" alt="Students posing with standing 3D robot mascot in classroom" class="gal-card-img">
+                    <div class="gal-card-overlay">
+                        <span class="gal-card-caption">Innovation Fair Showcase</span>
                     </div>
                 </div>
 
-                <!-- Item 8 -->
-                <div class="gallery-item" data-category="projects">
-                    <img src="assets/competition-robot.png" alt="Pathfinding robot grid">
-                    <div class="gallery-overlay">
-                        <h4>Autonomous Path Finder</h4>
-                        <p>Projects</p>
+                <!-- Card 8: Innovation Labs -->
+                <div class="gal-card" data-category="innovation">
+                    <img src="assets/coding-ai-robot.png" alt="Girl in safety goggles assembling electrical breadboard circuits" class="gal-card-img">
+                    <div class="gal-card-overlay">
+                        <span class="gal-card-caption">Smart Electronics & Circuits</span>
                     </div>
                 </div>
+
+                <!-- Card 9: Workshops -->
+                <div class="gal-card" data-category="workshops">
+                    <img src="assets/program-coding.png" alt="Young boy experiencing VR headset in technology workshop" class="gal-card-img">
+                    <div class="gal-card-overlay">
+                        <span class="gal-card-caption">Virtual Reality & AI Workshop</span>
+                    </div>
+                </div>
+
+                <!-- Card 10: In-house Program -->
+                <div class="gal-card" data-category="in-house">
+                    <img src="assets/program-senior.png" alt="Classroom of students following STEM presentation on screen" class="gal-card-img">
+                    <div class="gal-card-overlay">
+                        <span class="gal-card-caption">Structured Classroom Learning</span>
+                    </div>
+                </div>
+
+                <!-- Card 11: Project -->
+                <div class="gal-card" data-category="project">
+                    <img src="assets/card-inhouse.png" alt="Students building visual Scratch code blocks for robot car" class="gal-card-img">
+                    <div class="gal-card-overlay">
+                        <span class="gal-card-caption">Logic & Block Coding</span>
+                    </div>
+                </div>
+
+                <!-- Card 12: Innovation Labs -->
+                <div class="gal-card" data-category="innovation">
+                    <img src="assets/card-innovation.png" alt="Three students at desk collaborating with laptops and robot vehicle" class="gal-card-img">
+                    <div class="gal-card-overlay">
+                        <span class="gal-card-caption">AI & Future Technology</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -151,16 +268,16 @@
                     <a href="index.html" class="footer-logo">
                         <img src="assets/logo.avif" alt="RoboKidz Logo">
                     </a>
-                    <p class="footer-desc">Empowering children through Robotics, STEM, Coding & AI.</p>
+                    <p class="footer-desc">Empowering kids through Robotics, STEM, Coding & AI.</p>
                     <div class="social-links-circular">
                         <a href="#" class="social-icon-circle fb" aria-label="Facebook">
-                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                         </a>
                         <a href="#" class="social-icon-circle ig" aria-label="Instagram">
-                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                         </a>
                         <a href="#" class="social-icon-circle yt" aria-label="YouTube">
-                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.517 3.545 12 3.545 12 3.545s-7.517 0-9.388.507a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.871.507 9.388.507 9.388.507s7.517 0 9.388-.507a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#FFFFFF"/></svg>
                         </a>
                         <a href="#" class="social-icon-circle li" aria-label="LinkedIn">
                             <svg viewBox="0 0 24 24"><path fill="currentColor" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -184,10 +301,10 @@
                 <div class="footer-col">
                     <h4>Programs</h4>
                     <ul class="footer-links-list">
-                        <li><a href="programs.html">Junior Robotics (Grade 1–4)</a></li>
-                        <li><a href="programs.html">Senior Robotics (Grade 5–8)</a></li>
-                        <li><a href="programs.html">Coding & AI (Grade 11–13)</a></li>
-                        <li><a href="programs.html">Advanced Robotics (Grade 9 above)</a></li>
+                        <li><a href="programs.html">Workshops</a></li>
+                        <li><a href="programs.html">In-house Program</a></li>
+                        <li><a href="programs.html">Afterschool Program</a></li>
+                        <li><a href="programs.html">Innovation Labs</a></li>
                     </ul>
                 </div>
 
@@ -211,7 +328,7 @@
                             <span class="contact-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                             </span>
-                            <span class="contact-text">123 Innovation Street, Tech City, India – 600001</span>
+                            <span class="contact-text">123 Innovation Street, Tech City, India - 600001</span>
                         </li>
                     </ul>
                 </div>
@@ -220,11 +337,11 @@
                 <div class="footer-col">
                     <h4>Newsletter</h4>
                     <p class="newsletter-desc">Subscribe to get updates on our programs and events.</p>
-                    <form class="newsletter-pill-form">
+                    <form class="newsletter-pill-form" onsubmit="event.preventDefault();">
                         <div class="newsletter-input-wrapper">
                             <input type="email" placeholder="Enter your email" required>
                             <button type="submit" class="newsletter-submit-btn" aria-label="Subscribe">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                             </button>
                         </div>
                     </form>
@@ -233,17 +350,51 @@
 
             <!-- Footer Bottom -->
             <div class="footer-bottom">
-                <p>&copy; 2026 RoboKidz Education. All Rights Reserved.</p>
+                <p>&copy; 2024 Robokidz. All Rights Reserved.</p>
                 <ul class="footer-bottom-links">
                     <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Sitemap</a></li>
+                    <li><span class="footer-divider">|</span></li>
+                    <li><a href="#">Terms & Conditions</a></li>
                 </ul>
             </div>
         </div>
     </footer>
 
-    <!-- Main JavaScript Application -->
+    <!-- Main JavaScript Application & Category Filtering Script -->
     <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.gal-filter-btn');
+            const galleryCards = document.querySelectorAll('.gal-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    galleryCards.forEach(card => {
+                        const cardCategory = card.getAttribute('data-category');
+                        if (filterValue === 'all' || filterValue === cardCategory) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'scale(1)';
+                            }, 50);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'scale(0.95)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 250);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>

@@ -4,228 +4,236 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | RoboKidz STEM Education</title>
-    <meta name="description" content="Get in touch with RoboKidz. Book a free STEM robotics and coding diagnostic session, find our locations, or message our learning team today.">
+    <meta name="description" content="Get in touch with RoboKidz STEM Education. Have questions about our robotics courses, workshops, or innovation labs? We are here to help.">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232F80ED'/><circle cx='50' cy='50' r='20' fill='white'/></svg>">
-    <!-- Main Stylesheet -->
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Main, Programs & Contact Redesign Stylesheets -->
     <link rel="stylesheet" href="css/style.css?v=1.4">
-    <link rel="stylesheet" href="css/mobile.css?v=1.0">
+    <link rel="stylesheet" href="css/programs-redesign.css?v=1.1">
+    <link rel="stylesheet" href="css/contact-redesign.css?v=1.0">
 </head>
-<body>
+<body class="cnt-body">
 
-    <!-- Floating Background Elements -->
-    <svg class="decoration-shape decoration-gear-blue" viewBox="0 0 100 100">
-        <path d="M50 35c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15zm0 25c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10zm8.3-33l2.9-6.9c.3-.8-.1-1.7-.9-2l-5.8-2.4c-.8-.3-1.7.1-2 .9l-2.9 6.9c-2.4-.4-4.8-.4-7.2 0l-2.9-6.9c-.3-.8-1.2-1.2-2-.9L24.6 9c-.8.3-1.2 1.2-.9 2l2.9 6.9c-1.8 1.6-3.3 3.6-4.4 5.9l-6.9-2.9c-.8-.3-1.7.1-2 .9l-2.4 5.8c-.3.8.1 1.7.9 2l6.9 2.9c-.4 2.4-.4 4.8 0 7.2l-6.9 2.9c-.8.3-1.2 1.2-.9 2l2.4 5.8c.3.8 1.2 1.2 2 .9l6.9-2.9c1.1 2.3 2.6 4.3 4.4 5.9l-2.9 6.9c-.3.8.1 1.7.9 2l5.8 2.4c.8.3 1.7-.1 2-.9l2.9-6.9c2.4.4 4.8.4 7.2 0l2.9 6.9c.3.8 1.2 1.2 2 .9l5.8-2.4c.8-.3 1.2-1.2.9-2l-2.9-6.9c1.8-1.6 3.3-3.6 4.4-5.9l6.9 2.9c.8.3 1.7-.1 2-.9l2.4-5.8c.3-.8-.1-1.7-.9-2l-6.9-2.9c.4-2.4.4-4.8 0-7.2l6.9-2.9c.8-.3 1.2-1.2.9-2l-2.4-5.8c-.3-.8-1.2-1.2-2-.9l-6.9 2.9c-1.1-2.3-2.6-4.3-4.4-5.9z"/>
-    </svg>
+    <!-- Organic Corner Blobs (Pixel-Perfect Reference Match) -->
+    <div class="cnt-blob cnt-blob-tl"></div>
+    <div class="cnt-blob cnt-blob-tr"></div>
+    <div class="cnt-blob cnt-blob-bl"></div>
+    <div class="cnt-blob cnt-blob-br"></div>
 
-    <!-- Sticky Header -->
-    <header class="header">
-        <div class="container">
-            <a href="index.html" class="logo">
+    <!-- Floating Decorative Elements -->
+    <div class="cnt-decor cnt-gear-purple-1">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+        </svg>
+    </div>
+
+    <div class="cnt-decor cnt-gear-purple-2">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+        </svg>
+    </div>
+
+    <div class="cnt-decor cnt-star-yellow-1">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+    </div>
+
+    <div class="cnt-decor cnt-star-yellow-2">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+    </div>
+
+    <div class="cnt-decor cnt-plus-purple-1">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+        </svg>
+    </div>
+
+    <div class="cnt-decor cnt-plus-purple-2">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+        </svg>
+    </div>
+
+    <div class="cnt-decor cnt-plus-blue-1">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+        </svg>
+    </div>
+
+    <div class="cnt-decor cnt-ring-cyan">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+            <circle cx="12" cy="12" r="9"/>
+        </svg>
+    </div>
+
+    <div class="cnt-decor cnt-zigzag-green-1">
+        <svg width="18" height="36" viewBox="0 0 20 50" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+            <path d="M10 2 L2 14 L18 26 L2 38 L10 48"/>
+        </svg>
+    </div>
+
+    <div class="cnt-decor cnt-zigzag-green-2">
+        <svg width="18" height="36" viewBox="0 0 20 50" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+            <path d="M10 2 L2 14 L18 26 L2 38 L10 48"/>
+        </svg>
+    </div>
+
+    <!-- Sticky / Floating Navigation Bar -->
+    <header class="ref-header">
+        <div class="ref-nav-capsule">
+            <a href="index.html" class="ref-logo">
                 <img src="assets/logo.avif" alt="RoboKidz Logo">
             </a>
             
-            <button class="mobile-toggle" aria-label="Toggle Navigation">
+            <button class="ref-mobile-toggle" aria-label="Toggle Navigation">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="programs.html" class="nav-link">Programs</a></li>
-                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-                <li><a href="contact.html" class="nav-link active">Contact</a></li>
-                <li class="nav-btn-mobile"><a href="contact.html" class="btn btn-red">Enroll Now &rarr;</a></li>
+            <ul class="ref-nav-menu">
+                <li><a href="index.html" class="ref-nav-link">Home</a></li>
+                <li><a href="about.html" class="ref-nav-link">About</a></li>
+                <li><a href="programs.html" class="ref-nav-link">Programs</a></li>
+                <li><a href="gallery.html" class="ref-nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="ref-nav-link active">Contact</a></li>
             </ul>
             
-            <a href="contact.html" class="btn btn-red header-btn">Enroll Now &rarr;</a>
+            <a href="contact.html" class="ref-btn-enroll">Enroll Now <span>&rarr;</span></a>
         </div>
     </header>
 
-    <!-- Contact Hero Section -->
-    <section class="contact-hero">
-        <div class="container reveal-on-load">
-            <span class="section-tag blue">Connect</span>
-            <h1>Get In Touch</h1>
-            <p>Have questions about classes, schedules, fees, or events? Fill out our form or drop by our local innovation lab.</p>
+    <!-- Page Heading -->
+    <section class="cnt-hero-section">
+        <div class="cnt-container">
+            <h1 class="cnt-hero-title">Contact Us</h1>
         </div>
     </section>
 
-    <!-- Contact Main Grid Section -->
-    <section class="contact-section section-padding">
-        <div class="container contact-grid scroll-reveal">
-            
-            <!-- Cards (Left Column) -->
-            <div class="contact-info-cards">
-                <!-- Card 1 -->
-                <div class="contact-card">
-                    <div class="contact-card-icon">
-                        <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                    </div>
-                    <div class="contact-card-content">
-                        <h3>Call Our Office</h3>
-                        <p>Speak to our enrollment coordinator directly.</p>
-                        <p><a href="tel:+919876543210">+91 98765 43210</a></p>
-                        <p>Mon - Sat: 9 AM - 6 PM</p>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="contact-card">
-                    <div class="contact-card-icon">
-                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                    </div>
-                    <div class="contact-card-content">
-                        <h3>Email Helpdesk</h3>
-                        <p>For custom partnerships and general queries.</p>
-                        <p><a href="mailto:hello@robokidz.edu">hello@robokidz.edu</a></p>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="contact-card">
-                    <div class="contact-card-icon">
-                        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                    </div>
-                    <div class="contact-card-content">
-                        <h3>Our Main Lab Center</h3>
-                        <p>12, Innovation Boulevard, 3rd Block,</p>
-                        <p>Koramangala, Bangalore - 560034</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Interactive Form (Right Column) -->
-            <div class="contact-form-container">
-                <h2>Send Us a Message</h2>
-                <p>Submit your details to request a callback or lock in your child's free trial demo slot.</p>
+    <!-- Contact Main Section (2 Columns) -->
+    <section class="cnt-section">
+        <div class="cnt-container">
+            <div class="cnt-grid">
                 
-                <form class="contact-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="parentName">Parent's Name</label>
-                            <input type="text" id="parentName" class="form-control" placeholder="Arjun Sharma" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="childName">Child's Name & Age</label>
-                            <input type="text" id="childName" class="form-control" placeholder="Rohan, 10 Years" required>
-                        </div>
+                <!-- Left Side: Heading, Robot & Form -->
+                <div class="cnt-left-wrapper">
+                    <div class="cnt-left-header">
+                        <h2 class="cnt-section-title">Contact</h2>
+                        <img src="assets/contact-robot-gear.png" alt="RoboKidz Robot holding gear" class="cnt-robot-gear-img">
                     </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" class="form-control" placeholder="arjun@email.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" class="form-control" placeholder="9876543210" required>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="programSelect">Preferred Pathway</label>
-                        <select id="programSelect" class="form-control" style="background-color: var(--bg-secondary); border: none;" required>
-                            <option value="" disabled selected>Select a Program...</option>
-                            <option value="coding">Creative Coding (6-9 Years)</option>
-                            <option value="robotics">Sensor Robotics Lab (9-12 Years)</option>
-                            <option value="ai">Future AI & ML Explorers (12-16 Years)</option>
-                            <option value="electronics">Smart Electronics (11-15 Years)</option>
-                            <option value="workshop">Holiday Maker Workshop</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Your Message / Questions</label>
-                        <textarea id="message" class="form-control" placeholder="Tell us about your child's interests or specify a suitable Saturday demo timing..." required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">Book Free Trial Slot</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Placeholder Section -->
-    <section class="map-section section-padding" style="padding-top: 0;">
-        <div class="container">
-            <div class="map-container scroll-reveal">
-                <div class="map-mock">
-                    <div class="map-road-1"></div>
-                    <div class="map-road-2"></div>
                     
-                    <div class="map-pin">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                        </svg>
-                        <div class="map-pin-pulse"></div>
+                    <form class="cnt-form" onsubmit="event.preventDefault(); alert('Thank you for reaching out! Our team will contact you shortly.');">
+                        <!-- Row 1: Name & Email -->
+                        <div class="cnt-form-row-2">
+                            <div class="cnt-form-group">
+                                <input type="text" class="cnt-input-pill" placeholder="Your Name" required>
+                            </div>
+                            <div class="cnt-form-group">
+                                <input type="email" class="cnt-input-pill" placeholder="Email Address" required>
+                            </div>
+                        </div>
+
+                        <!-- Row 2: Phone Number -->
+                        <div class="cnt-form-group">
+                            <input type="tel" class="cnt-input-pill" placeholder="Phone Number" required>
+                        </div>
+
+                        <!-- Row 3: Message -->
+                        <div class="cnt-form-group">
+                            <textarea class="cnt-textarea-box" placeholder="Message" required></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="cnt-btn-send">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Right Side: Contact Details & Robot/Map -->
+                <div class="cnt-right-wrapper">
+                    
+                    <!-- Small Robot holding location pin -->
+                    <img src="assets/contact-robot-pin.png" alt="RoboKidz Robot holding location pin" class="cnt-robot-pin-img">
+
+                    <div class="cnt-info-list">
+                        <!-- Address -->
+                        <div class="cnt-info-item">
+                            <div class="cnt-icon-circle red">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                            </div>
+                            <div class="cnt-info-content">
+                                <span class="cnt-info-title">Address:</span>
+                                <span class="cnt-info-value">123 STEM Lane, Tech City</span>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="cnt-info-item">
+                            <div class="cnt-icon-circle green">
+                                <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            </div>
+                            <div class="cnt-info-content">
+                                <span class="cnt-info-title">Phone:</span>
+                                <a href="tel:+15551234567" class="cnt-info-value">+1 555 123 4567</a>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="cnt-info-item">
+                            <div class="cnt-icon-circle blue">
+                                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            </div>
+                            <div class="cnt-info-content">
+                                <span class="cnt-info-title">Email:</span>
+                                <a href="mailto:info@robokidz.com" class="cnt-info-value">info@robokidz.com</a>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="map-card-popup">
-                        <h4>RoboKidz Lab Center</h4>
-                        <p>Koramangala, Bangalore</p>
+
+                </div>
+
+            </div>
+
+            <!-- Bottom Dot Grid Matrix -->
+            <div class="cnt-dot-matrix">
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+
+            <!-- Location & Real Embedded Google Map Section (Reference Image 2) -->
+            <div class="cnt-loc-section">
+                <div class="cnt-loc-card">
+                    
+                    <!-- Floating Card Label Header (Reference Image 2) -->
+                    <div class="cnt-loc-header">
+                        <span class="cnt-loc-name">RoboKidz Lab Center</span>
+                        <span class="cnt-loc-address">Koramangala, Bangalore</span>
                     </div>
+
+                    <!-- Embedded Interactive Google Map -->
+                    <iframe 
+                        class="cnt-map-iframe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.751689531557!2d77.62024767507567!3d12.923674687387343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae148d4957e841%3A0x378564e542d99d36!2sKoramangala%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="RoboKidz Lab Center Location Map">
+                    </iframe>
+
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- FAQ Section -->
-    <section class="faq-section section-padding">
-        <div class="container">
-            <div class="section-header scroll-reveal">
-                <span class="section-tag red">Enrollment Qs</span>
-                <h2>Registration FAQ</h2>
-                <p>Quick facts regarding batch scheduling, pricing structures, and refund policy guides.</p>
-            </div>
-
-            <div class="faq-container scroll-reveal">
-                <!-- FAQ 1 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What happens in a free trial diagnostic session?</h3>
-                        <div class="faq-icon-box">
-                            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                        </div>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-content">
-                            Our coordinators spend 45 minutes introducing your child to block logical paths or mechanical drives. We gauge their interest and analytical level to recommend the most optimal path start.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- FAQ 2 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Can we reschedule classes if we miss one?</h3>
-                        <div class="faq-icon-box">
-                            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                        </div>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-content">
-                            Yes! Every term program features dedicated catch-up slots. Simply log a request 24 hours prior and we will slot your child in a makeup session on alternating weekdays.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- FAQ 3 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Do you offer installment payments?</h3>
-                        <div class="faq-icon-box">
-                            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                        </div>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-content">
-                            Yes, term courses (12-16 weeks) can be split into three monthly installments paid at the laboratory desk or online portal.
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -238,16 +246,16 @@
                     <a href="index.html" class="footer-logo">
                         <img src="assets/logo.avif" alt="RoboKidz Logo">
                     </a>
-                    <p class="footer-desc">Empowering children through Robotics, STEM, Coding & AI.</p>
+                    <p class="footer-desc">Empowering kids through Robotics, STEM, Coding & AI.</p>
                     <div class="social-links-circular">
                         <a href="#" class="social-icon-circle fb" aria-label="Facebook">
-                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                         </a>
                         <a href="#" class="social-icon-circle ig" aria-label="Instagram">
-                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                         </a>
                         <a href="#" class="social-icon-circle yt" aria-label="YouTube">
-                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.517 3.545 12 3.545 12 3.545s-7.517 0-9.388.507a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.871.507 9.388.507 9.388.507s7.517 0 9.388-.507a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#FFFFFF"/></svg>
                         </a>
                         <a href="#" class="social-icon-circle li" aria-label="LinkedIn">
                             <svg viewBox="0 0 24 24"><path fill="currentColor" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -271,10 +279,10 @@
                 <div class="footer-col">
                     <h4>Programs</h4>
                     <ul class="footer-links-list">
-                        <li><a href="programs.html">Junior Robotics (Grade 1–4)</a></li>
-                        <li><a href="programs.html">Senior Robotics (Grade 5–8)</a></li>
-                        <li><a href="programs.html">Coding & AI (Grade 11–13)</a></li>
-                        <li><a href="programs.html">Advanced Robotics (Grade 9 above)</a></li>
+                        <li><a href="programs.html">Workshops</a></li>
+                        <li><a href="programs.html">In-house Program</a></li>
+                        <li><a href="programs.html">Afterschool Program</a></li>
+                        <li><a href="programs.html">Innovation Labs</a></li>
                     </ul>
                 </div>
 
@@ -298,7 +306,7 @@
                             <span class="contact-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                             </span>
-                            <span class="contact-text">123 Innovation Street, Tech City, India – 600001</span>
+                            <span class="contact-text">123 Innovation Street, Tech City, India - 600001</span>
                         </li>
                     </ul>
                 </div>
@@ -307,11 +315,11 @@
                 <div class="footer-col">
                     <h4>Newsletter</h4>
                     <p class="newsletter-desc">Subscribe to get updates on our programs and events.</p>
-                    <form class="newsletter-pill-form">
+                    <form class="newsletter-pill-form" onsubmit="event.preventDefault();">
                         <div class="newsletter-input-wrapper">
                             <input type="email" placeholder="Enter your email" required>
                             <button type="submit" class="newsletter-submit-btn" aria-label="Subscribe">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                             </button>
                         </div>
                     </form>
@@ -320,11 +328,11 @@
 
             <!-- Footer Bottom -->
             <div class="footer-bottom">
-                <p>&copy; 2026 RoboKidz Education. All Rights Reserved.</p>
+                <p>&copy; 2024 Robokidz. All Rights Reserved.</p>
                 <ul class="footer-bottom-links">
                     <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Sitemap</a></li>
+                    <li><span class="footer-divider">|</span></li>
+                    <li><a href="#">Terms & Conditions</a></li>
                 </ul>
             </div>
         </div>
