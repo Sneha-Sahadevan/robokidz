@@ -3472,9 +3472,17 @@ textarea.form-control {
    1. MISSION HERO SECTION
    -------------------------------------------------------------------------- */
 .about-mission-section {
-    padding-top: 10px;
-    padding-bottom: 80px;
+    min-height: 100vh;
+    padding-top: 130px;
+    padding-bottom: 60px;
     position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.about-mission-section .container {
+    width: 100%;
 }
 
 .mission-grid {
@@ -3707,6 +3715,7 @@ textarea.form-control {
     background: linear-gradient(180deg, #F0F6FE 0%, #FFFFFF 100%);
     padding: 100px 0;
     position: relative;
+    scroll-margin-top: 100px;
 }
 
 .vision-grid {
