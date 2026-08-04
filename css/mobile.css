@@ -20,10 +20,18 @@
     }
 
     /* Hero corner blobs — scale down */
-    .hero-corner-blob-left,
+    .hero-corner-blob-left {
+        width: 90px;
+        height: 90px;
+        bottom: 0;
+        left: 0;
+    }
+
     .hero-corner-blob-right {
-        width: 120px;
-        height: 120px;
+        width: 90px;
+        height: 90px;
+        bottom: 0;
+        right: 0;
     }
 
     /* ---- HEADER ---- */

@@ -743,20 +743,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-corner-blob-left {
     position: absolute;
-    bottom: -45px;
-    left: -45px;
-    width: 210px;
-    height: 210px;
+    bottom: 0;
+    left: 0;
+    width: 140px;
+    height: 140px;
     z-index: 1;
     pointer-events: none;
 }
 
 .hero-corner-blob-right {
     position: absolute;
-    bottom: -45px;
-    right: -45px;
-    width: 210px;
-    height: 210px;
+    bottom: 0;
+    right: 0;
+    width: 140px;
+    height: 140px;
     z-index: 1;
     pointer-events: none;
 }
