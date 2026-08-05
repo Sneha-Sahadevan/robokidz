@@ -237,4 +237,56 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1500);
         });
     }
+
+    // 10. Program Details Modal Handler (In-house Program)
+    const inhouseModal = document.getElementById('inhouseProgramModal');
+    const closeInhouseBtn = document.getElementById('closeInhouseModal');
+
+    const openInhouseModalFunc = () => {
+        if (inhouseModal) {
+            inhouseModal.classList.add('open');
+            inhouseModal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+    };
+
+    const closeInhouseModalFunc = () => {
+        if (inhouseModal) {
+            inhouseModal.classList.remove('open');
+            inhouseModal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+    };
+
+    // Event Delegation for Open Button
+    document.addEventListener('click', (e) => {
+        const btn = e.target.closest('#openInhouseModal, .open-inhouse-modal, a[href="#in-house"], a[href="programs.html#in-house"]');
+        if (btn && window.location.pathname.endsWith('programs.html')) {
+            e.preventDefault();
+            openInhouseModalFunc();
+        }
+    });
+
+    if (closeInhouseBtn) {
+        closeInhouseBtn.addEventListener('click', closeInhouseModalFunc);
+    }
+
+    if (inhouseModal) {
+        inhouseModal.addEventListener('click', (e) => {
+            if (e.target === inhouseModal) {
+                closeInhouseModalFunc();
+            }
+        });
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && inhouseModal && inhouseModal.classList.contains('open')) {
+            closeInhouseModalFunc();
+        }
+    });
+
+    // Auto-open modal if URL hash is #in-house or #inhouse
+    if (window.location.hash === '#in-house' || window.location.hash === '#inhouse') {
+        openInhouseModalFunc();
+    }
 });

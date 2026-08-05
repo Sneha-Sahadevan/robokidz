@@ -110,26 +110,26 @@
                     <div class="ref-card-content">
                         <div>
                             <h2 class="ref-card-title red">In-house Program</h2>
-                            <div class="ref-card-subtitle">Learn Together. Grow Together.</div>
-                            <p class="ref-card-desc">Structured curriculum delivered within schools or institutions with expert guidance and modern resources.</p>
+                            <div class="ref-card-subtitle">Learn Robotics. Build. Innovate.</div>
+                            <p class="ref-card-desc">A structured robotics program conducted within schools where students design, build, and program real robots while developing engineering, coding, mathematics, creativity, and problem-solving skills.</p>
                             
                             <ul class="ref-card-bullets">
                                 <li class="ref-card-bullet-item">
                                     <span class="ref-check-icon red">&#10003;</span>
-                                    <span>School & institution based</span>
+                                    <span>School-based robotics program</span>
                                 </li>
                                 <li class="ref-card-bullet-item">
                                     <span class="ref-check-icon red">&#10003;</span>
-                                    <span>Customized curriculum</span>
+                                    <span>Hands-on robot building & coding</span>
                                 </li>
                                 <li class="ref-card-bullet-item">
                                     <span class="ref-check-icon red">&#10003;</span>
-                                    <span>Progress tracking & reports</span>
+                                    <span>STEM-focused practical learning</span>
                                 </li>
                             </ul>
                         </div>
                         
-                        <a href="contact.html" class="ref-card-btn red">Learn More <span>&rarr;</span></a>
+                        <button type="button" class="ref-card-btn red" id="openInhouseModal" onclick="document.getElementById('inhouseProgramModal').classList.add('open'); document.body.style.overflow='hidden';" aria-label="Learn more about In-house Program">Learn More <span>&rarr;</span></button>
                     </div>
                 </div>
 
@@ -147,26 +147,26 @@
                     <div class="ref-card-content">
                         <div>
                             <h2 class="ref-card-title green">Innovation Labs</h2>
-                            <div class="ref-card-subtitle">Innovate. Experiment. Excel.</div>
-                            <p class="ref-card-desc">Advanced labs for young innovators to experiment with robotics, AI, IoT and emerging technologies and bring ideas to life.</p>
+                            <div class="ref-card-subtitle">Explore. Create. Innovate.</div>
+                            <p class="ref-card-desc">An advanced innovation lab where students gain hands-on experience with robotics, Artificial Intelligence, IoT, drones, 3D printing, and emerging technologies while developing practical problem-solving and innovation skills.</p>
                             
                             <ul class="ref-card-bullets">
                                 <li class="ref-card-bullet-item">
                                     <span class="ref-check-icon green">&#10003;</span>
-                                    <span>Advanced technology access</span>
+                                    <span>Robotics, AI & Emerging Technologies</span>
                                 </li>
                                 <li class="ref-card-bullet-item">
                                     <span class="ref-check-icon green">&#10003;</span>
-                                    <span>Mentor-led innovation</span>
+                                    <span>Hands-on Innovation Projects</span>
                                 </li>
                                 <li class="ref-card-bullet-item">
                                     <span class="ref-check-icon green">&#10003;</span>
-                                    <span>Build real-world solutions</span>
+                                    <span>Future-ready STEM Learning</span>
                                 </li>
                             </ul>
                         </div>
                         
-                        <a href="contact.html" class="ref-card-btn green">Learn More <span>&rarr;</span></a>
+                        <a href="innovation-labs.html" class="ref-card-btn green">Learn More <span>&rarr;</span></a>
                     </div>
                 </div>
 
@@ -360,9 +360,9 @@
                     <h4>Programs</h4>
                     <ul class="footer-links-list">
                         <li><a href="programs.html">Workshops</a></li>
-                        <li><a href="programs.html">In-house Program</a></li>
+                        <li><a href="programs.html#in-house">In-house Program</a></li>
                         <li><a href="programs.html">Afterschool Program</a></li>
-                        <li><a href="programs.html">Innovation Labs</a></li>
+                        <li><a href="innovation-labs.html">Innovation Labs</a></li>
                     </ul>
                 </div>
 
@@ -417,6 +417,116 @@
             </div>
         </div>
     </footer>
+
+    <!-- In-house Program Details Modal -->
+    <div class="program-modal-backdrop" id="inhouseProgramModal" aria-hidden="true" role="dialog" aria-labelledby="inhouseModalTitle">
+        <div class="program-modal-dialog">
+            <div class="program-modal-header">
+                <div class="program-modal-badge red">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="program-modal-title" id="inhouseModalTitle">In-house Robotics Program</h2>
+                    <p class="program-modal-subtitle">Learn Robotics. Build. Innovate.</p>
+                </div>
+                <button type="button" class="program-modal-close" id="closeInhouseModal" onclick="document.getElementById('inhouseProgramModal').classList.remove('open'); document.body.style.overflow='';" aria-label="Close modal">&times;</button>
+            </div>
+            
+            <div class="program-modal-body">
+                
+                <!-- Overview -->
+                <div class="program-modal-section">
+                    <h3 class="program-modal-heading">
+                        <span class="heading-icon red">📌</span> Overview
+                    </h3>
+                    <p class="program-modal-text">
+                        A continuous school robotics program designed to help children learn engineering fundamentals through practical robotics, mathematics, and science. The program can be conducted during regular school hours or as weekend classes based on the school's preference.
+                    </p>
+                </div>
+
+                <!-- What Students Will Learn -->
+                <div class="program-modal-section">
+                    <h3 class="program-modal-heading">
+                        <span class="heading-icon red">🎯</span> What Students Will Learn
+                    </h3>
+                    <p class="program-modal-subtext">Students will:</p>
+                    <ul class="program-modal-list">
+                        <li>Build and program real-life robotic solutions.</li>
+                        <li>Learn robotics fundamentals and basic engineering terminology.</li>
+                        <li>Understand sensors, motors, and robotics experiments.</li>
+                        <li>Learn NXT programming.</li>
+                        <li>Build and program a MyBot capable of performing beginner and advanced tasks.</li>
+                        <li>Study principles of light, sound, sensor technology, and mechanics.</li>
+                        <li>Apply mathematics including addition, subtraction, multiplication, division, averages, and geometry concepts such as angles, triangles, and measurement.</li>
+                        <li>
+                            Build robots including:
+                            <ul class="program-modal-sublist">
+                                <li>CastorBot</li>
+                                <li>3-Motor Chassis</li>
+                                <li>HammerBot</li>
+                                <li>Rattlesnake Robot</li>
+                            </ul>
+                        </li>
+                        <li>Design, build, and program their own robot.</li>
+                        <li>Develop creativity, innovation, logical thinking, and problem-solving skills.</li>
+                    </ul>
+
+                    <!-- Challenge Highlight Box -->
+                    <div class="program-challenge-box">
+                        <div class="challenge-badge">🏆 Program Challenge</div>
+                        <p class="challenge-text">The program concludes with a <strong>SumoBot Challenge</strong> and an <strong>Obstacle Challenge</strong>.</p>
+                    </div>
+                </div>
+
+                <!-- Responsibilities Grid: Robokidz Provides vs School Provides -->
+                <div class="program-modal-grid">
+                    <!-- Robokidz Provides -->
+                    <div class="program-info-card">
+                        <h4 class="program-info-title red">
+                            <span>🤖</span> Robokidz Provides
+                        </h4>
+                        <ul class="program-check-list">
+                            <li>Robotic Kits</li>
+                            <li>Professional Trainers</li>
+                            <li>Laptops</li>
+                            <li>Programming Software</li>
+                            <li>Level 1 & Level 2 Certificates upon successful completion</li>
+                            <li>Study Materials</li>
+                            <li>Writing Pads, Pencils/Pens, and Rulers</li>
+                            <li>IHCP Hoarding for School Display</li>
+                        </ul>
+                    </div>
+
+                    <!-- School Provides & Duration -->
+                    <div class="program-info-card">
+                        <h4 class="program-info-title blue">
+                            <span>🏫</span> School Provides
+                        </h4>
+                        <ul class="program-check-list">
+                            <li>Classroom or suitable space for conducting robotics sessions.</li>
+                        </ul>
+
+                        <div class="program-duration-mini-card">
+                            <h4 class="program-info-title orange" style="margin-top: 16px;">
+                                <span>⏱️</span> Duration
+                            </h4>
+                            <div class="duration-highlight">
+                                <strong>5 Months (30 Hours)</strong>
+                                <span>One 1.5-hour session per week.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="program-modal-footer">
+                <a href="contact.html" class="ref-card-btn red modal-cta">Enroll / Contact Us <span>&rarr;</span></a>
+            </div>
+        </div>
+    </div>
 
     <!-- Main JS Application -->
     <script src="js/main.js"></script>
