@@ -238,55 +238,87 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 10. Program Details Modal Handler (In-house Program)
-    const inhouseModal = document.getElementById('inhouseProgramModal');
-    const closeInhouseBtn = document.getElementById('closeInhouseModal');
+    // 10. Program Details Popup Modals Handler (All 4 Programs)
+    const programModals = {
+        inhouse: document.getElementById('inhouseProgramModal'),
+        innovation: document.getElementById('innovationProgramModal'),
+        afterschool: document.getElementById('afterschoolProgramModal'),
+        workshop: document.getElementById('workshopProgramModal')
+    };
 
-    const openInhouseModalFunc = () => {
-        if (inhouseModal) {
-            inhouseModal.classList.add('open');
-            inhouseModal.setAttribute('aria-hidden', 'false');
+    const openProgramModal = (modalKey) => {
+        const modal = programModals[modalKey];
+        if (modal) {
+            modal.classList.add('open');
+            modal.setAttribute('aria-hidden', 'false');
             document.body.style.overflow = 'hidden';
         }
     };
 
-    const closeInhouseModalFunc = () => {
-        if (inhouseModal) {
-            inhouseModal.classList.remove('open');
-            inhouseModal.setAttribute('aria-hidden', 'true');
-            document.body.style.overflow = '';
-        }
-    };
-
-    // Event Delegation for Open Button
-    document.addEventListener('click', (e) => {
-        const btn = e.target.closest('#openInhouseModal, .open-inhouse-modal, a[href="#in-house"], a[href="programs.html#in-house"]');
-        if (btn && window.location.pathname.endsWith('programs.html')) {
-            e.preventDefault();
-            openInhouseModalFunc();
-        }
-    });
-
-    if (closeInhouseBtn) {
-        closeInhouseBtn.addEventListener('click', closeInhouseModalFunc);
-    }
-
-    if (inhouseModal) {
-        inhouseModal.addEventListener('click', (e) => {
-            if (e.target === inhouseModal) {
-                closeInhouseModalFunc();
+    const closeAllProgramModals = () => {
+        Object.values(programModals).forEach(modal => {
+            if (modal && modal.classList.contains('open')) {
+                modal.classList.remove('open');
+                modal.setAttribute('aria-hidden', 'true');
             }
         });
-    }
+        document.body.style.overflow = '';
+    };
 
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && inhouseModal && inhouseModal.classList.contains('open')) {
-            closeInhouseModalFunc();
+    // Event Delegation for Opening Modals
+    document.addEventListener('click', (e) => {
+        const inhouseBtn = e.target.closest('#openInhouseModal, .open-inhouse-modal, a[href="#in-house"], a[href="programs.html#in-house"]');
+        const innovationBtn = e.target.closest('#openInnovationModal, .open-innovation-modal, a[href="#innovation-labs"], a[href="programs.html#innovation-labs"]');
+        const afterschoolBtn = e.target.closest('#openAfterschoolModal, .open-afterschool-modal, a[href="#afterschool-program"], a[href="programs.html#afterschool-program"]');
+        const workshopBtn = e.target.closest('#openWorkshopModal, .open-workshop-modal, a[href="#workshops"], a[href="programs.html#workshops"]');
+
+        const isProgramsPage = window.location.pathname.endsWith('programs.html') || window.location.pathname.endsWith('/') || window.location.pathname === '';
+
+        if (inhouseBtn && isProgramsPage) {
+            e.preventDefault();
+            closeAllProgramModals();
+            openProgramModal('inhouse');
+        } else if (innovationBtn && isProgramsPage) {
+            e.preventDefault();
+            closeAllProgramModals();
+            openProgramModal('innovation');
+        } else if (afterschoolBtn && isProgramsPage) {
+            e.preventDefault();
+            closeAllProgramModals();
+            openProgramModal('afterschool');
+        } else if (workshopBtn && isProgramsPage) {
+            e.preventDefault();
+            closeAllProgramModals();
+            openProgramModal('workshop');
+        }
+
+        // Close when clicking X button or backdrop
+        if (e.target.closest('.program-modal-close')) {
+            closeAllProgramModals();
+        } else if (e.target.classList.contains('program-modal-backdrop')) {
+            closeAllProgramModals();
         }
     });
 
-    // Auto-open modal if URL hash is #in-house or #inhouse
-    if (window.location.hash === '#in-house' || window.location.hash === '#inhouse') {
-        openInhouseModalFunc();
-    }
+    // Close modal on Escape key press
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeAllProgramModals();
+        }
+    });
+
+    // Auto-open modal if URL hash is present
+    const checkHashModal = () => {
+        const hash = window.location.hash.toLowerCase();
+        if (hash === '#in-house' || hash === '#inhouse') {
+            openProgramModal('inhouse');
+        } else if (hash === '#innovation-labs' || hash === '#innovation') {
+            openProgramModal('innovation');
+        } else if (hash === '#afterschool-program' || hash === '#afterschool') {
+            openProgramModal('afterschool');
+        } else if (hash === '#workshops' || hash === '#workshop') {
+            openProgramModal('workshop');
+        }
+    };
+    checkHashModal();
 });
