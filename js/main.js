@@ -5,12 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 100);
 
     // 2. Sticky Header Scroll Effect
-    const header = document.querySelector('.header');
+    const header = document.querySelector('.header') || document.querySelector('.ref-header');
     const handleScroll = () => {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
+        if (header) {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
         }
     };
     window.addEventListener('scroll', handleScroll);
@@ -120,8 +122,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 7. Gallery Category Filters
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const galleryItems = document.querySelectorAll('.gallery-item');
+    const filterBtns = document.querySelectorAll('.filter-btn, .gal-filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item, .gal-card');
     
     if (filterBtns.length > 0 && galleryItems.length > 0) {
         filterBtns.forEach(btn => {
@@ -156,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 8. Gallery Lightbox Modal
-    const galleryContainer = document.querySelector('.gallery-grid');
+    const galleryContainer = document.querySelector('.gallery-grid, .gal-grid');
     if (galleryContainer) {
         const lightbox = document.createElement('div');
         lightbox.className = 'lightbox';
@@ -176,12 +178,15 @@ document.addEventListener('DOMContentLoaded', () => {
         galleryItems.forEach(item => {
             item.addEventListener('click', () => {
                 const img = item.querySelector('img');
-                const captionText = item.querySelector('.gallery-overlay h4').textContent;
+                const captionElem = item.querySelector('.gallery-overlay h4, .gal-card-caption, .gallery-overlay');
+                const captionText = captionElem ? captionElem.textContent.trim() : '';
                 
-                lightboxImg.src = img.src;
-                lightboxCaption.textContent = captionText;
-                lightbox.classList.add('open');
-                document.body.style.overflow = 'hidden'; // Stop scroll
+                if (img) {
+                    lightboxImg.src = img.src;
+                    lightboxCaption.textContent = captionText;
+                    lightbox.classList.add('open');
+                    document.body.style.overflow = 'hidden'; // Stop scroll
+                }
             });
         });
         
