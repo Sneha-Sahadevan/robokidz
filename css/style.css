@@ -537,8 +537,111 @@ h1, h2, h3, h4, h5, h6 {
     100% { transform: translateY(0px) rotate(0deg); }
 }
 
+/* ==========================================================================
+   Hero Robot Automatic Continuous Pose Animation & Smooth Crossfade
+   ========================================================================== */
+.robot-animation-container {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    height: 100%;
+    min-height: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
 .floating-robot {
-    animation: robotFloating 6s ease-in-out infinite;
+    user-select: none;
+    -webkit-user-drag: none;
+    will-change: opacity, transform;
+}
+
+.floating-robot.robot-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    max-width: 480px;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.65s ease-in-out;
+    pointer-events: none;
+}
+
+.floating-robot.robot-layer.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Pose Micro-Motion Animation Keyframes */
+.pose-0-motion {
+    animation: robotFloatPose0 6s ease-in-out infinite;
+}
+@keyframes robotFloatPose0 {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-16px) rotate(1.5deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.pose-1-motion {
+    animation: robotJumpCheer 2.6s ease-in-out infinite;
+}
+@keyframes robotJumpCheer {
+    0%, 100% { transform: translateY(0px) scale(1); }
+    30% { transform: translateY(6px) scale(1.02, 0.96); }
+    50% { transform: translateY(-24px) scale(0.98, 1.04); }
+    70% { transform: translateY(-8px) scale(1); }
+    85% { transform: translateY(3px) scale(1.01, 0.99); }
+}
+
+.pose-2-motion {
+    animation: robotThumbsUp 3.2s ease-in-out infinite;
+}
+@keyframes robotThumbsUp {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    25% { transform: translateY(-9px) rotate(-1.8deg); }
+    50% { transform: translateY(-2px) rotate(1.8deg); }
+    75% { transform: translateY(-12px) rotate(-1deg); }
+}
+
+.pose-3-motion {
+    animation: robotLaptopWork 4s ease-in-out infinite;
+}
+@keyframes robotLaptopWork {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-6px) rotate(0.8deg); }
+}
+
+.pose-4-motion {
+    animation: robotDabDance 2.4s ease-in-out infinite;
+}
+@keyframes robotDabDance {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-10px) rotate(-3.5deg) translateX(-5px); }
+    50% { transform: translateY(-3px) rotate(2deg) translateX(3px); }
+    75% { transform: translateY(-12px) rotate(4deg) translateX(5px); }
+}
+
+.pose-5-motion {
+    animation: robotIdeaMoment 3.5s ease-in-out infinite;
+}
+@keyframes robotIdeaMoment {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    40% { transform: translateY(-11px) rotate(-2.5deg); }
+    70% { transform: translateY(-5px) rotate(1.5deg); }
+}
+
+.pose-6-motion {
+    animation: robotSillyWave 2.4s ease-in-out infinite;
+}
+@keyframes robotSillyWave {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    25% { transform: translateY(-7px) rotate(2.5deg); }
+    50% { transform: translateY(-12px) rotate(-2.5deg); }
+    75% { transform: translateY(-5px) rotate(1.5deg); }
 }
 
 /* Intersection Observer Scroll Reveal */
