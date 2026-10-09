@@ -4233,3 +4233,101 @@ textarea.form-control {
 
 
 
+
+/* Custom Global Navbar Fix */
+.header-wrapper {
+    position: fixed;
+    top: 16px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+    pointer-events: none;
+    transition: var(--transition-smooth);
+}
+.header-wrapper-logo {
+    pointer-events: auto;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+.header-wrapper-logo img {
+    height: 75px !important;
+    width: auto;
+    transition: var(--transition-bounce);
+}
+.header-wrapper-logo:hover img {
+    transform: scale(1.04);
+}
+.header-wrapper .header {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 auto !important; /* Centered in available space */
+    pointer-events: auto;
+    padding: 12px 36px !important;
+    background-color: rgba(255, 255, 255, 0.96) !important;
+    backdrop-filter: blur(16px) !important;
+    box-shadow: var(--shadow-md) !important;
+    border-radius: 100px !important;
+}
+.header-wrapper .header .container {
+    display: flex !important;
+    gap: 36px !important;
+    width: auto !important;
+    padding: 0 !important;
+    justify-content: center !important;
+    max-width: none !important;
+}
+.header-wrapper .header.scrolled {
+    padding: 8px 36px !important;
+    box-shadow: var(--shadow-lg) !important;
+}
+
+@media (max-width: 1024px) {
+    .header-wrapper {
+        padding: 0 24px;
+    }
+    .header-wrapper-logo img {
+        height: 60px !important;
+    }
+    .header-wrapper .header {
+        padding: 10px 24px !important;
+    }
+    .header-wrapper .header .container {
+        gap: 24px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-wrapper {
+        top: 12px;
+        padding: 0 16px;
+        justify-content: space-between;
+    }
+    .header-wrapper-logo img {
+        height: 50px !important;
+    }
+    .header-wrapper .header {
+        position: static !important; /* Let .nav-menu position relative to .header-wrapper */
+        margin: 0 !important;
+        margin-left: auto !important;
+        padding: 8px 12px !important;
+        border-radius: 60px !important;
+    }
+    .header-wrapper .header .container {
+        gap: 0 !important;
+    }
+    .header-wrapper .header .nav-menu {
+        left: 16px !important;
+        right: 16px !important;
+        width: calc(100% - 32px) !important;
+        top: calc(100% + 10px) !important; /* 100% of header-wrapper height */
+    }
+}
