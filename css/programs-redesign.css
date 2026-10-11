@@ -652,7 +652,6 @@
 .ref-footer-brand-logo img {
     height: 48px;
     width: auto;
-    filter: brightness(0) invert(1);
 }
 
 .ref-footer-brand-desc {
