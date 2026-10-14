@@ -425,28 +425,6 @@ h1, h2, h3, h4, h5, h6 {
         display: flex;
     }
     
-    .nav-menu {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 80%;
-        max-width: 320px;
-        height: 100vh;
-        background-color: #FFFFFF;
-        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-        z-index: 1050;
-        transition: var(--transition-smooth);
-        padding: 60px 40px;
-    }
-    
-    .nav-menu.open {
-        right: 0;
-    }
-    
     .header-btn {
         display: none;
     }
@@ -4308,26 +4286,9 @@ textarea.form-control {
     .header-wrapper {
         top: 12px;
         padding: 0 16px;
-        justify-content: space-between;
     }
     .header-wrapper-logo img {
-        height: 50px !important;
-    }
-    .header-wrapper .header {
-        position: static !important; /* Let .nav-menu position relative to .header-wrapper */
-        margin: 0 !important;
-        margin-left: auto !important;
-        padding: 8px 12px !important;
-        border-radius: 60px !important;
-    }
-    .header-wrapper .header .container {
-        gap: 0 !important;
-    }
-    .header-wrapper .header .nav-menu {
-        left: 16px !important;
-        right: 16px !important;
-        width: calc(100% - 32px) !important;
-        top: calc(100% + 10px) !important; /* 100% of header-wrapper height */
+        height: 44px !important;
     }
 }
 

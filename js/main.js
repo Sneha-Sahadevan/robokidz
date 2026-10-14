@@ -23,18 +23,43 @@ document.addEventListener('DOMContentLoaded', () => {
     const navMenu = document.querySelector('.nav-menu') || document.querySelector('.ref-nav-menu');
     
     if (mobileToggle && navMenu) {
-        mobileToggle.addEventListener('click', () => {
-            mobileToggle.classList.toggle('open');
-            navMenu.classList.toggle('open');
+        mobileToggle.setAttribute('aria-expanded', 'false');
+
+        const closeMobileMenu = () => {
+            mobileToggle.classList.remove('open');
+            navMenu.classList.remove('open');
+            mobileToggle.setAttribute('aria-expanded', 'false');
+            document.body.classList.remove('menu-open');
+        };
+
+        const toggleMobileMenu = (e) => {
+            e.stopPropagation();
+            const isOpen = navMenu.classList.toggle('open');
+            mobileToggle.classList.toggle('open', isOpen);
+            mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            document.body.classList.toggle('menu-open', isOpen);
+        };
+
+        mobileToggle.addEventListener('click', toggleMobileMenu);
+
+        // Close menu when clicking a nav link or CTA button inside
+        const navLinks = navMenu.querySelectorAll('a, .nav-link, .btn');
+        navLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
         });
 
-        // Close menu when clicking a nav link
-        const navLinks = document.querySelectorAll('.nav-link, .ref-nav-link');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileToggle.classList.remove('open');
-                navMenu.classList.remove('open');
-            });
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (navMenu.classList.contains('open') && !navMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
+                closeMobileMenu();
+            }
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+                closeMobileMenu();
+            }
         });
     }
 
