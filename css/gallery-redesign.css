@@ -384,8 +384,10 @@
 }
 
 .gal-body .header-wrapper-logo img {
-    height: 75px !important;
-    width: auto;
+    width: 110px !important;
+    height: 110px !important;
+    max-height: none !important;
+    object-fit: contain;
     transition: var(--transition-bounce, all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275));
 }
 
@@ -428,7 +430,9 @@
         padding: 0 24px;
     }
     .gal-body .header-wrapper-logo img {
-        height: 60px !important;
+        width: 58px !important;
+        height: 58px !important;
+        object-fit: contain;
     }
     .gal-body .header-wrapper .header {
         padding: 10px 24px !important;
@@ -444,6 +448,8 @@
         padding: 0 16px;
     }
     .gal-body .header-wrapper-logo img {
-        height: 44px !important;
+        width: 48px !important;
+        height: 48px !important;
+        object-fit: contain;
     }
 }

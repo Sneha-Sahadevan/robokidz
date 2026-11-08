@@ -62,7 +62,7 @@
         display: flex !important;
         align-items: center !important;
         background: rgba(255, 255, 255, 0.98) !important;
-        padding: 5px 14px !important;
+        padding: 6px 14px !important;
         border-radius: 50px !important;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08) !important;
         border: 1px solid rgba(226, 232, 240, 0.9) !important;
@@ -71,8 +71,10 @@
     .header-wrapper-logo img,
     .header .logo img,
     .ref-logo img {
-        height: 32px !important;
-        width: auto !important;
+        height: 58px !important;
+        width: 58px !important;
+        max-width: none !important;
+        object-fit: contain !important;
         display: block !important;
     }
 
@@ -1455,6 +1457,19 @@
    ===================================================== */
 @media (max-width: 576px) {
 
+    .header-wrapper-logo,
+    .header .logo,
+    .ref-logo {
+        padding: 5px 12px !important;
+    }
+
+    .header-wrapper-logo img,
+    .header .logo img,
+    .ref-logo img {
+        height: 48px !important;
+        width: 48px !important;
+    }
+
     .programs-grid-v2,
     .why-grid,
     .features-grid,
@@ -1490,6 +1505,19 @@
    EXTRA SMALL PHONES — max-width: 380px
    ===================================================== */
 @media (max-width: 380px) {
+
+    .header-wrapper-logo,
+    .header .logo,
+    .ref-logo {
+        padding: 4px 10px !important;
+    }
+
+    .header-wrapper-logo img,
+    .header .logo img,
+    .ref-logo img {
+        height: 38px !important;
+        width: 38px !important;
+    }
 
     .hero-title-ref {
         font-size: 1.65rem;
