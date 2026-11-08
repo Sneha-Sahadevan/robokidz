@@ -1748,7 +1748,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 2.1fr 1fr 1.3fr 1.6fr 1.8fr;
+    grid-template-columns: 2fr 1fr 2fr 1.8fr;
     gap: 0;
     margin-bottom: 35px;
     align-items: flex-start;
@@ -2026,7 +2026,7 @@ h1, h2, h3, h4, h5, h6 {
         padding-right: 24px;
     }
     .footer-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 36px 0;
     }
     .footer-col {
